@@ -5,6 +5,4 @@ Case study on how the role and module-ownership ofa developer changes over time 
 Contributors :
   Nandan Parikh,
   Prateek Malhotra,
-  Rucha Rangnekar,
-  Shivam Dalmia,
   Tanmay Chinchore
