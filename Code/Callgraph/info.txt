@@ -1,0 +1,2 @@
+parse-op.py expects there to be an output.txt present which contains the output of java-callgraph. It then creates a file of relevant rows.
+parse-classg.py creates the graph image
