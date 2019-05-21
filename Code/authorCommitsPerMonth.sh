@@ -32,7 +32,7 @@ AUTHORS=`git log --all --format='%aN' | sort -u | grep -o '^\S*'`
 echo $AUTHORS
 
 
-#Exit if no authors
+#Exit if no authors in repo
 if [ ${#AUTHORS[@]} == 0 ]
 then
 	echo "No authors found"
@@ -40,10 +40,11 @@ then
 fi
 
 #For each author, for each month, find his commits
+#Stored in folder/monthlyCommitsByAuthor.txt file
 for author in $AUTHORS
 do
 	echo "Author is : " $author
-	echo "Author is : " $author >> sorted.txt
+	echo "Author is : " $author " " >> $FOLDER/monthlyCommitsByAuthor.txt
 	from=$FROM
 	while [ $from -lt $TO ]
 	do
@@ -51,15 +52,20 @@ do
 		while [ $index -lt 12 ]
 		do
 			echo ${MONTH[$index]};
+
+			#Find commit number for the author in a particular month
 			commits=`git log --all --after=$from"-"${MONTH[$index]}"-01" --until=$from"-"${MONTH[$index]}"-"${DATE[$index]} --author=$author\
 			| grep -E "^commit" | sed -e 's/commit //g'`;
 			echo "" > $FOLDER/tempForAuthor.txt
 			for commit in $commits
 			do
+				echo "Number : " $commit >> $FOLDER/tempForAuthor.txt;
+
+				#All files changed by the author in a commit; Does not include merge pull requests
 				git show --pretty="" --name-only $commit >> $FOLDER/tempForAuthor.txt
 			done
-			echo "Current month/year : " ${MONTH[$index]}/$from >> $FOLDER/sorted.txt
-			sort -u $FOLDER/tempForAuthor.txt >> $FOLDER/sorted.txt 
+			echo "Current month/year : " ${MONTH[$index]}/$from >> $FOLDER/monthlyCommitsByAuthor.txt
+			sort -u $FOLDER/tempForAuthor.txt >> $FOLDER/monthlyCommitsByAuthor.txt 
 			((index++))
 		done
 		((from++))
