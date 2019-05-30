@@ -10,6 +10,8 @@ FROM=$2
 TO=$3
 FOLDER=$4
 
+mkdir $FOLDER;
+
 ((TO++))
 
 echo $TO

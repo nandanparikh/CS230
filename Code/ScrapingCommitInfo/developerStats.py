@@ -1,7 +1,7 @@
 '''
 Compute developer stats for each author for particular repo
 
-Usage : python developerStats.py repoName
+Usage : python developerStats.py repoName folderNameForResults
 
 repoName is the output directory from authorCommitsPerMonth.sh
 
@@ -20,9 +20,14 @@ developerMonthlyNewWork = {}
 #Dict for author -> Month -> { List of files worked upon in that month}
 developerMonthlyStat = {}
 
+
+shellStatsFolder = sys.argv[1];
+
+resultsFolder = sys.argv[2];
+
 #All directories in given location. This corresponds to each author we intend to work upon
 dirlist = []
-for root, dirs, files in os.walk(sys.argv[1]):
+for root, dirs, files in os.walk(shellStatsFolder):
     dirlist += dirs
 
 #print(dirlist)
@@ -39,7 +44,7 @@ for author in dirlist:
 	allFilesForAuthor = []
 	monthlyCount = {}
 
-	file = open(sys.argv[1]+"/"+author+"/monthlyCommits.txt", "r");
+	file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
 	month = 0
 	newFiles = 0
 	# Iterating every line from file
@@ -64,7 +69,7 @@ for author in dirlist:
 	developerWork[author] = set(allFilesForAuthor)
 	file.close()
 
-sys.stdout = open('MonthlyWorkPerAuthor', 'w')
+sys.stdout = open(resultsFolder+'/MonthlyWorkPerAuthor', 'w')
 #sys.stdout = sys.__stdout__
 
 for author, monthlyData in developerMonthlyStat.items():
@@ -75,7 +80,7 @@ for author, monthlyData in developerMonthlyStat.items():
 		for file in filesWorked:
 			print(file)
 
-sys.stdout = open('AllFilesWorkPerAuthor', 'w')
+sys.stdout = open(resultsFolder+'/AllFilesWorkPerAuthor', 'w')
 
 for author,files in developerWork.items():
 	print("\n****************")
@@ -85,7 +90,7 @@ for author,files in developerWork.items():
 		print(file)
 
 
-sys.stdout = open('CountOfFilesWorked', 'w')
+sys.stdout = open(resultsFolder+'/CountOfFilesWorked', 'w')
 
 for author,files in developerWork.items():
 	print("Developer is ", author)
