@@ -14,6 +14,9 @@ import sys
 #Dict for author -> List of files worked upon in entire duration
 developerWork = {}
 
+#Dict for author -> Month -> new file count per month
+developerMonthlyNewWork = {}
+
 #Dict for author -> Month -> { List of files worked upon in that month}
 developerMonthlyStat = {}
 
@@ -34,26 +37,34 @@ for author in dirlist:
 	monthlyDict = {}
 	currList = []
 	allFilesForAuthor = []
+	monthlyCount = {}
 
 	file = open(sys.argv[1]+"/"+author+"/monthlyCommits.txt", "r");
 	month = 0
-
+	newFiles = 0
 	# Iterating every line from file
 	for line in file:
 		if "Current month" not in line:
 			if len(line.strip()) != 0:
-				allFilesForAuthor.append(line.strip())
+
+				if line.strip() not in allFilesForAuthor:
+					newFiles += 1
+					allFilesForAuthor.append(line.strip())
+					
 				currList.append(line.strip())
 		else: 
 			monthlyDict[month] = currList
+			monthlyCount[month] = newFiles
 			month += 1
 			currList = []
+			newFiles = 0
 
 	developerMonthlyStat[author] = monthlyDict
+	developerMonthlyNewWork[author] = monthlyCount
 	developerWork[author] = set(allFilesForAuthor)
 	file.close()
 
-sys.stdout = open('file', 'w')
+sys.stdout = open('MonthlyWorkPerAuthor', 'w')
 #sys.stdout = sys.__stdout__
 
 for author, monthlyData in developerMonthlyStat.items():
@@ -64,7 +75,7 @@ for author, monthlyData in developerMonthlyStat.items():
 		for file in filesWorked:
 			print(file)
 
-sys.stdout = open('allFiles', 'w')
+sys.stdout = open('AllFilesWorkPerAuthor', 'w')
 
 for author,files in developerWork.items():
 	print("\n****************")
@@ -74,3 +85,18 @@ for author,files in developerWork.items():
 		print(file)
 
 
+sys.stdout = open('CountOfFilesWorked', 'w')
+
+for author,files in developerWork.items():
+	print("Developer is ", author)
+	print(len(files))
+
+#sys.stdout = sys.__stdout__
+for author, monthlyData in developerMonthlyNewWork.items():
+	print("\n****************")
+	print("Developer is ", author)
+	count = 0
+	for month, filesWorked in monthlyData.items():
+		print("\nMonth is : ", month, " with new files : ", filesWorked )
+		count += filesWorked
+	#print("Count printed for test : ", count)
