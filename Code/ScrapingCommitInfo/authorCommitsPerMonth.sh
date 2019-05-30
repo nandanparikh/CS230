@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# @author : Nandan
 #First argument : Folder of git repo
 #Second argument : Year to start search with
 #Third argument : Year to end on
