@@ -10,6 +10,7 @@ repoName is the output directory from authorCommitsPerMonth.sh
 
 import os
 import sys
+import pandas as pd
 
 #Dict for author -> List of files worked upon in entire duration
 developerWork = {}
@@ -20,6 +21,7 @@ developerMonthlyNewWork = {}
 #Dict for author -> Month -> { List of files worked upon in that month}
 developerMonthlyStat = {}
 
+authorDict = {}
 
 shellStatsFolder = sys.argv[1];
 
@@ -47,6 +49,9 @@ for author in dirlist:
 	file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
 	month = 0
 	newFiles = 0
+	uniqueFilesWorked = []
+	monthlyTotalFilesWorked = {}
+	monthlyFiles = 0
 	# Iterating every line from file
 	for line in file:
 		if "Current month" not in line:
@@ -57,13 +62,21 @@ for author in dirlist:
 					allFilesForAuthor.append(line.strip())
 					
 				currList.append(line.strip())
+
+				if line.strip() not in uniqueFilesWorked:
+					monthlyFiles += 1
+					uniqueFilesWorked.append(line.strip())
 		else: 
 			monthlyDict[month] = currList
 			monthlyCount[month] = newFiles
+			monthlyTotalFilesWorked[month] = monthlyFiles
 			month += 1
 			currList = []
 			newFiles = 0
+			monthlyFiles = 0
+			uniqueFilesWorked = []
 
+	authorDict[author] = monthlyTotalFilesWorked
 	developerMonthlyStat[author] = monthlyDict
 	developerMonthlyNewWork[author] = monthlyCount
 	developerWork[author] = set(allFilesForAuthor)
@@ -105,3 +118,9 @@ for author, monthlyData in developerMonthlyNewWork.items():
 		print("\nMonth is : ", month, " with new files : ", filesWorked )
 		count += filesWorked
 	#print("Count printed for test : ", count)
+
+df = pd.DataFrame(developerMonthlyNewWork)
+df.to_csv('monthlyStatsNew.csv')
+
+df = pd.DataFrame(authorDict)
+df.to_csv('monthlyStatsTotal.csv')
