@@ -42,9 +42,9 @@ for author in dirlist:
 	file.close()
 
 df = pd.DataFrame(authorDict) 
-df.to_csv('df.csv')
+df.to_csv(resultsFolder+'/df.csv')
     
 #print("Transpose the dictionary")
     
 df1 = df.transpose()
-df1.to_csv('df1.csv')
+df1.to_csv(resultsFolder+'/df1.csv')

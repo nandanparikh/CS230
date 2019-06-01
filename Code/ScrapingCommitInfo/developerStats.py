@@ -120,7 +120,7 @@ for author, monthlyData in developerMonthlyNewWork.items():
 	#print("Count printed for test : ", count)
 
 df = pd.DataFrame(developerMonthlyNewWork)
-df.to_csv('monthlyStatsNew.csv')
+df.to_csv(resultsFolder+'/monthlyStatsNew.csv')
 
 df = pd.DataFrame(authorDict)
-df.to_csv('monthlyStatsTotal.csv')
+df.to_csv(resultsFolder+'/monthlyStatsTotal.csv')

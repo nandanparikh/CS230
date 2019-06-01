@@ -1,3 +1,13 @@
-sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2014 $PWD/okhttp
+#For okhttp Years 2012 to 2013
+
+sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 $PWD/okhttp
 sh authorCommitsPerMonth.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2014 $PWD/okhttp
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD/okhttp
+python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
+
+#For ExoPlayer : Years 2016 to 2017
+
+sh totalCommits.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 $PWD/ExoPlayer
+sh authorCommitsPerMonth.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 $PWD/ExoPlayer
+python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
+python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
