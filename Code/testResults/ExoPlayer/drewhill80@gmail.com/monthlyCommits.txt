@@ -1,0 +1,65 @@
+Author :  drewhill80@gmail.com  
+Current month/year :  01/2016
+
+Current month/year :  02/2016
+
+Current month/year :  03/2016
+
+Current month/year :  04/2016
+
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java
+Current month/year :  05/2016
+
+library/src/main/java/com/google/android/exoplayer/MediaCodecTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/MediaFormat.java
+library/src/main/java/com/google/android/exoplayer/audio/AudioTrack.java
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java
+Current month/year :  06/2016
+
+Current month/year :  07/2016
+
+Current month/year :  08/2016
+
+Current month/year :  09/2016
+
+Current month/year :  10/2016
+
+Current month/year :  11/2016
+
+Current month/year :  12/2016
+
+library/src/main/java/com/google/android/exoplayer2/audio/AudioTrack.java
+library/src/main/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractor.java
+library/src/main/java/com/google/android/exoplayer2/text/Cue.java
+library/src/main/java/com/google/android/exoplayer2/text/ImageCue.java
+library/src/main/java/com/google/android/exoplayer2/ui/SimpleExoPlayerView.java
+library/src/main/java/com/google/android/exoplayer2/ui/SubtitlePainter.java
+library/src/main/res/layout/exo_simple_player_view.xml
+Current month/year :  01/2017
+
+library/src/main/java/com/google/android/exoplayer2/text/Cue.java
+library/src/main/java/com/google/android/exoplayer2/ui/SubtitlePainter.java
+Current month/year :  02/2017
+
+Current month/year :  03/2017
+
+Current month/year :  04/2017
+
+Current month/year :  05/2017
+
+Current month/year :  06/2017
+
+Current month/year :  07/2017
+
+Current month/year :  08/2017
+
+Current month/year :  09/2017
+
+Current month/year :  10/2017
+
+library/core/src/main/java/com/google/android/exoplayer2/video/MediaCodecVideoRenderer.java
+library/core/src/main/java/com/google/android/exoplayer2/video/VideoFrameReleaseTimeHelper.java
+Current month/year :  11/2017
+
+Current month/year :  12/2017
+

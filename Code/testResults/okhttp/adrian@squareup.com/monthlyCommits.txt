@@ -121,7 +121,9 @@ okhttp/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
 pom.xml
 Current month/year :  02/2014
 
+benchmarks/README.md
 benchmarks/pom.xml
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/Benchmark.java
 mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockResponse.java
 mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockWebServer.java
 mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/PushPromise.java
@@ -129,6 +131,8 @@ okcurl/src/main/java/com/squareup/okhttp/curl/Main.java
 okhttp-protocols/pom.xml
 okhttp-protocols/src/main/java/com/squareup/okhttp/internal/bytes/DeflaterSink.java
 okhttp-protocols/src/main/java/com/squareup/okhttp/internal/bytes/GzipSource.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/Http20Draft09.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/Spdy3.java
 okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/SpdyConnection.java
 okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/SpdyStream.java
 okhttp-protocols/src/test/java/com/squareup/okhttp/internal/bytes/GzipSourceTest.java
@@ -144,6 +148,7 @@ okhttp/src/test/java/com/squareup/okhttp/SyncApiTest.java
 okhttp/src/test/java/com/squareup/okhttp/internal/http/HeadersTest.java
 okhttp/src/test/java/com/squareup/okhttp/internal/http/HttpOverHttp20Draft09Test.java
 okhttp/src/test/java/com/squareup/okhttp/internal/http/HttpOverSpdyTest.java
+okhttp/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
 pom.xml
 Current month/year :  03/2014
 

@@ -1,0 +1,244 @@
+Current month/year :  01/2016
+
+Current month/year :  02/2016
+
+Current month/year :  03/2016
+
+Current month/year :  04/2016
+
+Current month/year :  05/2016
+
+Current month/year :  06/2016
+
+Current month/year :  07/2016
+
+demo/src/main/java/com/google/android/exoplayer/demo/SmoothStreamingTestMediaDrmCallback.java
+demo/src/main/java/com/google/android/exoplayer/demo/WidevineTestMediaDrmCallback.java
+demo/src/main/java/com/google/android/exoplayer/demo/player/DashRendererBuilder.java
+demo/src/main/java/com/google/android/exoplayer/demo/player/SmoothStreamingRendererBuilder.java
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/LibopusAudioTrackRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/OpusDecoder.java
+extensions/opus/src/main/jni/opus_jni.cc
+extensions/opus/src/main/proguard.cfg
+library/src/main/java/com/google/android/exoplayer/MediaCodecTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/MediaCodecVideoTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/drm/DrmSessionManager.java
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/MediaDrmCallback.java
+library/src/main/java/com/google/android/exoplayer/drm/StreamingDrmSessionManager.java
+Current month/year :  08/2016
+
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/StreamingDrmSessionManager.java
+Current month/year :  09/2016
+
+Current month/year :  10/2016
+
+Current month/year :  11/2016
+
+extensions/ffmpeg/src/main/java/com/google/android/exoplayer2/ext/ffmpeg/FfmpegAudioRenderer.java
+extensions/flac/src/main/java/com/google/android/exoplayer2/ext/flac/LibflacAudioRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/LibopusAudioRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusDecoder.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusDecoderException.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusLibrary.java
+extensions/opus/src/main/jni/opus_jni.cc
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/LibvpxVideoRenderer.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/LibvpxVideoRenderer.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoder.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoderException.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxLibrary.java
+extensions/vp9/src/main/jni/vpx_jni.cc
+library/src/main/java/com/google/android/exoplayer2/audio/AudioDecoderException.java
+library/src/main/java/com/google/android/exoplayer2/audio/SimpleDecoderAudioRenderer.java
+library/src/main/java/com/google/android/exoplayer2/drm/DecryptionException.java
+Current month/year :  12/2016
+
+Current month/year :  01/2017
+
+Current month/year :  02/2017
+
+Current month/year :  03/2017
+
+Current month/year :  04/2017
+
+Current month/year :  05/2017
+
+Current month/year :  06/2017
+
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayer.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImpl.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/SimpleExoPlayer.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/DrmSession.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
+Current month/year :  07/2017
+
+Current month/year :  08/2017
+
+Current month/year :  09/2017
+
+extensions/flac/README.md
+extensions/flac/src/main/java/com/google/android/exoplayer2/ext/flac/FlacExtractor.java
+extensions/flac/src/main/jni/flac_parser.cc
+extensions/flac/src/main/jni/include/flac_parser.h
+library/core/src/main/java/com/google/android/exoplayer2/C.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/NoSampleRenderer.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/FixedTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/MappingTrackSelector.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/RandomTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/TrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/TrackSelectorResult.java
+library/core/src/main/java/com/google/android/exoplayer2/util/FlacStreamInfo.java
+library/core/src/test/java/com/google/android/exoplayer2/trackselection/MappingTrackSelectorTest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsChunkSource.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsChunkSource.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsSampleStreamWrapper.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/DefaultSsChunkSource.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/DefaultSsChunkSource.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeChunkSource.java
+Current month/year :  10/2017
+
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoder.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSession.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSessionManager.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/DefaultTrackSelector.java
+library/core/src/test/java/com/google/android/exoplayer2/trackselection/DefaultTrackSelectorTest.java
+Current month/year :  11/2017
+
+RELEASENOTES.md
+RELEASENOTES.md
+RELEASENOTES.md
+demos/cast/src/main/java/com/google/android/exoplayer2/castdemo/PlayerManager.java
+demos/cast/src/main/java/com/google/android/exoplayer2/castdemo/PlayerManager.java
+demos/cast/src/main/java/com/google/android/exoplayer2/castdemo/PlayerManager.java
+demos/cast/src/main/java/com/google/android/exoplayer2/castdemo/PlayerManager.java
+demos/ima/src/main/java/com/google/android/exoplayer2/imademo/PlayerManager.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+extensions/flac/src/androidTest/java/com/google/android/exoplayer2/ext/flac/FlacPlaybackTest.java
+extensions/opus/src/androidTest/java/com/google/android/exoplayer2/ext/opus/OpusPlaybackTest.java
+extensions/vp9/src/androidTest/java/com/google/android/exoplayer2/ext/vp9/VpxPlaybackTest.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/ExoPlayerTest.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessage.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessageDecoder.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessageDecoder.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessageEncoder.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessageEncoder.java
+library/core/src/main/java/com/google/android/exoplayer2/metadata/emsg/EventMessageEncoder.java
+library/core/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoaderFactory.java
+library/core/src/main/java/com/google/android/exoplayer2/source/DefaultCompositeSequenceableLoaderFactory.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/MergingMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/MergingMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/SingleSampleMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ads/AdsMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/BaseTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/TrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/upstream/DummyDataSource.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageDecoderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageDecoderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageDecoderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageEncoderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageEncoderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/metadata/emsg/EventMessageTest.java
+library/core/src/test/java/com/google/android/exoplayer2/source/CompositeSequenceableLoaderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/source/CompositeSequenceableLoaderTest.java
+library/dash/src/androidTest/assets/sample_mpd_4_event_stream
+library/dash/src/androidTest/assets/sample_mpd_4_event_stream
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParserTest.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParserTest.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParserTest.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestTest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaPeriod.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaPeriod.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/EventSampleStream.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/EventSampleStream.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/EventStream.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/Period.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaPeriod.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaSource.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaSource.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaPeriod.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTestRunner.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeTrackSelection.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeTrackSelector.java
+Current month/year :  12/2017
+
+RELEASENOTES.md
+RELEASENOTES.md
+RELEASENOTES.md
+demos/ima/src/main/java/com/google/android/exoplayer2/imademo/PlayerManager.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+demos/main/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+extensions/flac/src/androidTest/java/com/google/android/exoplayer2/ext/flac/FlacPlaybackTest.java
+extensions/opus/src/androidTest/java/com/google/android/exoplayer2/ext/opus/OpusPlaybackTest.java
+extensions/vp9/src/androidTest/java/com/google/android/exoplayer2/ext/vp9/VpxPlaybackTest.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/ExoPlayerTest.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/core/src/main/java/com/google/android/exoplayer2/extractor/mp4/FragmentedMp4Extractor.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ClippingMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/DeferredMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/MediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/MergingMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/SequenceableLoader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/SingleSampleMediaPeriod.java
+library/core/src/main/java/com/google/android/exoplayer2/source/SingleSampleMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/ads/AdsMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/source/chunk/ChunkSampleStream.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/BaseTrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/trackselection/TrackSelection.java
+library/core/src/main/java/com/google/android/exoplayer2/upstream/DummyDataSource.java
+library/core/src/test/java/com/google/android/exoplayer2/source/CompositeSequenceableLoaderTest.java
+library/core/src/test/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelectionTest.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestTest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaPeriod.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaPeriod.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaSource.java
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/HlsSampleStreamWrapper.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaPeriod.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.java
+library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/manifest/SsManifest.java
+library/ui/src/main/java/com/google/android/exoplayer2/ui/PlaybackControlView.java
+library/ui/src/main/java/com/google/android/exoplayer2/ui/SimpleExoPlayerView.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTestRunner.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeMediaPeriod.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeTrackSelection.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeTrackSelector.java

@@ -1,0 +1,71 @@
+Author :  julian.cable@yahoo.com  
+Current month/year :  01/2016
+
+Current month/year :  02/2016
+
+Current month/year :  03/2016
+
+Current month/year :  04/2016
+
+Current month/year :  05/2016
+
+Current month/year :  06/2016
+
+Current month/year :  07/2016
+
+Current month/year :  08/2016
+
+Current month/year :  09/2016
+
+Current month/year :  10/2016
+
+Current month/year :  11/2016
+
+Current month/year :  12/2016
+
+Current month/year :  01/2017
+
+build.gradle
+demo/src/main/assets/media.exolist.json
+library/src/androidTest/assets/mkv/ssasample.mkv
+library/src/androidTest/assets/mkv/ssasample.mkv.0.dump
+library/src/androidTest/assets/mkv/ssasample.mkv.1.dump
+library/src/androidTest/assets/mkv/ssasample.mkv.2.dump
+library/src/androidTest/assets/mkv/ssasample.mkv.3.dump
+library/src/androidTest/assets/ssa/typical
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractorTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/text/ssa/SSATests.java
+library/src/main/java/com/google/android/exoplayer2/Format.java
+library/src/main/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractor.java
+library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
+library/src/main/java/com/google/android/exoplayer2/text/ssa/SSACue.java
+library/src/main/java/com/google/android/exoplayer2/text/ssa/SSADecoder.java
+library/src/main/java/com/google/android/exoplayer2/text/ssa/SSASubtitle.java
+library/src/main/java/com/google/android/exoplayer2/text/ssa/Style.java
+library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+Current month/year :  02/2017
+
+library/src/main/java/com/google/android/exoplayer2/Format.java
+library/src/main/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractor.java
+library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
+library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+Current month/year :  03/2017
+
+Current month/year :  04/2017
+
+Current month/year :  05/2017
+
+Current month/year :  06/2017
+
+Current month/year :  07/2017
+
+Current month/year :  08/2017
+
+Current month/year :  09/2017
+
+Current month/year :  10/2017
+
+Current month/year :  11/2017
+
+Current month/year :  12/2017
+
