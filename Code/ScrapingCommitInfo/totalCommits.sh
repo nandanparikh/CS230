@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# @author : Nandan
 #First argument : Folder of git repo
 #Second argument : Year to start search with
 #Third argument : Year to end on
@@ -8,6 +9,8 @@
 FROM=$2
 TO=$3
 FOLDER=$4
+
+mkdir $FOLDER;
 
 ((TO++))
 

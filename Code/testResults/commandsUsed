@@ -1,2 +1,0 @@
-sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2014 $PWD/okhttp
-sh authorCommitsPerMonth.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2014 $PWD/okhttp

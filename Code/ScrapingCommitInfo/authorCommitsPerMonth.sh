@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# @author : Nandan
 #First argument : Folder of git repo
 #Second argument : Year to start search with
 #Third argument : Year to end on
@@ -12,6 +13,8 @@ DATE=(31 28 31 30 31 30 31 31 30 31 30 31)
 FROM=$2
 TO=$3
 FOLDER=$4
+
+mkdir $FOLDER;
 
 ((TO++))
 
@@ -59,13 +62,19 @@ do
 			done
 			echo "Current month/year : " ${MONTH[$index]}/$from >> $FOLDER/$author/monthlyCommits.txt
 			sort -u $FOLDER/tempForAuthor.txt >> $FOLDER/$author/monthlyCommits.txt
+
+			sort -u $FOLDER/tempForAuthor.txt >> $FOLDER/allCommitsForTimePeriod.txt
+
+			echo "Current month/year : " ${MONTH[$index]}/$from >> $FOLDER/$author/allMonthlyCommits.txt						
+			sort $FOLDER/tempForAuthor.txt >> $FOLDER/$author/allMonthlyCommits.txt
 			((index++))
 		done
 		((from++))
 	done
 done
 
-
+sort -u $FOLDER/allCommitsForTimePeriod.txt > $FOLDER/allCommitsForGraph.txt
+rm -f $FOLDER/tempForAuthor.txt $FOLDER/allCommitsForTimePeriod.txt
 #References
 #Sample codes : authors and date
 #git log --all --after=$2"-01-31" --until="2019-05-19" --author="N"
