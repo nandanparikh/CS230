@@ -1,0 +1,136 @@
+Author :  cdrolle@google.com  
+Current month/year :  01/2016
+
+library/src/main/java/com/google/android/exoplayer/dash/DashChunkSource.java
+library/src/main/java/com/google/android/exoplayer/dash/mpd/MediaPresentationDescriptionParser.java
+Current month/year :  02/2016
+
+Current month/year :  03/2016
+
+Current month/year :  04/2016
+
+Current month/year :  05/2016
+
+Current month/year :  06/2016
+
+extensions/vp9/src/main/java/com/google/android/exoplayer/ext/vp9/LibvpxVideoTrackRenderer.java
+library/src/androidTest/assets/dash/sample_mpd_2_unknown_mime_type
+library/src/androidTest/java/com/google/android/exoplayer/dash/mpd/MediaPresentationDescriptionParserTest.java
+library/src/main/java/com/google/android/exoplayer/dash/mpd/MediaPresentationDescriptionParser.java
+library/src/main/java/com/google/android/exoplayer/extractor/DefaultTrackOutput.java
+library/src/main/java/com/google/android/exoplayer/text/SimpleSubtitleOutputBuffer.java
+library/src/main/java/com/google/android/exoplayer/text/SimpleSubtitleParser.java
+library/src/main/java/com/google/android/exoplayer/text/SubtitleInputBuffer.java
+library/src/main/java/com/google/android/exoplayer/text/SubtitleOutputBuffer.java
+library/src/main/java/com/google/android/exoplayer/text/SubtitleParser.java
+library/src/main/java/com/google/android/exoplayer/text/SubtitleParserFactory.java
+library/src/main/java/com/google/android/exoplayer/text/TextTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/ClosedCaption.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/ClosedCaptionCtrl.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/ClosedCaptionList.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/ClosedCaptionText.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/Eia608Parser.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/Eia608Subtitle.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/Eia608SubtitleOutputBuffer.java
+library/src/main/java/com/google/android/exoplayer/text/eia608/Eia608TrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/text/subrip/SubripParser.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlParser.java
+library/src/main/java/com/google/android/exoplayer/text/tx3g/Tx3gParser.java
+library/src/main/java/com/google/android/exoplayer/text/webvtt/Mp4WebvttParser.java
+library/src/main/java/com/google/android/exoplayer/text/webvtt/WebvttParser.java
+library/src/main/java/com/google/android/exoplayer/util/extensions/AudioDecoderTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/util/extensions/SimpleDecoder.java
+Current month/year :  07/2016
+
+library/src/androidTest/assets/rawcc/sample.rawcc
+library/src/androidTest/assets/rawcc/sample.rawcc.0.dump
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractorTest.java
+library/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/src/main/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractor.java
+library/src/main/java/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+Current month/year :  08/2016
+
+Current month/year :  09/2016
+
+library/src/androidTest/assets/rawcc/sample.rawcc.0.dump
+library/src/main/java/com/google/android/exoplayer2/extractor/mp4/AtomParsers.java
+library/src/main/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractor.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/H264Reader.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/H265Reader.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/SeiReader.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsSampleStreamWrapper.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylistParser.java
+library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaDecoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaOutputBuffer.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaSubtitle.java
+library/src/main/java/com/google/android/exoplayer2/text/eia608/Eia608Decoder.java
+library/src/main/java/com/google/android/exoplayer2/text/eia608/Eia608Subtitle.java
+library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+library/src/main/java/com/google/android/exoplayer2/util/ParsableByteArray.java
+Current month/year :  10/2016
+
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+Current month/year :  11/2016
+
+library/src/androidTest/java/com/google/android/exoplayer2/FormatTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractorTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParserTest.java
+library/src/main/java/com/google/android/exoplayer2/Format.java
+library/src/main/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractor.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
+library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+Current month/year :  12/2016
+
+library/src/androidTest/java/com/google/android/exoplayer/util/UtilTest.java
+library/src/main/java/com/google/android/exoplayer/util/Util.java
+library/src/main/java/com/google/android/exoplayer2/text/Cue.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
+library/src/main/java/com/google/android/exoplayer2/ui/SubtitlePainter.java
+Current month/year :  01/2017
+
+library/src/main/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractor.java
+library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea708Cue.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea708Decoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaDecoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaSubtitle.java
+Current month/year :  02/2017
+
+demo/src/main/java/com/google/android/exoplayer2/demo/TrackSelectionHelper.java
+library/src/main/java/com/google/android/exoplayer2/text/SimpleSubtitleDecoder.java
+library/src/main/java/com/google/android/exoplayer2/text/TextRenderer.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea708Decoder.java
+library/src/main/java/com/google/android/exoplayer2/text/cea/CeaDecoder.java
+Current month/year :  03/2017
+
+library/src/main/java/com/google/android/exoplayer2/text/cea/Cea708Decoder.java
+Current month/year :  04/2017
+
+Current month/year :  05/2017
+
+Current month/year :  06/2017
+
+Current month/year :  07/2017
+
+Current month/year :  08/2017
+
+Current month/year :  09/2017
+
+Current month/year :  10/2017
+
+Current month/year :  11/2017
+
+Current month/year :  12/2017
+
