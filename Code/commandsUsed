@@ -11,3 +11,7 @@ sh totalCommits.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 $PWD/
 sh authorCommitsPerMonth.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 $PWD/ExoPlayer
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
 python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
+
+
+#Testing Hops
+python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/author-commits /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/call-graph
