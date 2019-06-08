@@ -1,9 +1,18 @@
+#Generalized information : ALL CONSOLIDATED
+
+USAGE :
+
+sh findAllInformationForRepo gitRepoFolder yearFrom yearTo resultsDirectory
+Example : sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 $PWD/okhttpCheck
+
+
+
 #For okhttp Years 2012 to 2013
 
 sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 $PWD/okhttp
 sh authorCommitsPerMonth.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2014 $PWD/okhttp
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD/okhttp
-python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD/ExoPlayer
+python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD/okhttp
 
 #For ExoPlayer : Years 2016 to 2017
 
@@ -17,7 +26,7 @@ python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommit
 python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/author-commits /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/call-graph
 
 
-
+#For okhttp Years 2016 to 2017
 sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2016 2017 $PWD/okhttp
 
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD
