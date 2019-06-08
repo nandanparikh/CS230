@@ -15,3 +15,10 @@ python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommit
 
 #Testing Hops
 python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/author-commits /Users/walled/Documents/CS230/CS230/Code/testResults/testScripts/call-graph
+
+
+
+sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2016 2017 $PWD/okhttp
+
+python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD
+python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD

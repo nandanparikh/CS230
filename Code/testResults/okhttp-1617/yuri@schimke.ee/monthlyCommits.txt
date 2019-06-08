@@ -1,0 +1,167 @@
+Current month/year :  01/2016
+
+Current month/year :  02/2016
+
+Current month/year :  03/2016
+
+Current month/year :  04/2016
+
+.travis.yml
+okcurl/src/main/java/okhttp3/curl/Main.java
+okhttp/src/main/java/okhttp3/internal/Platform.java
+pom.xml
+Current month/year :  05/2016
+
+benchmarks/src/main/java/okhttp3/benchmarks/ApacheHttpClient.java
+benchmarks/src/main/java/okhttp3/benchmarks/Benchmark.java
+benchmarks/src/main/java/okhttp3/benchmarks/NettyHttpClient.java
+benchmarks/src/main/java/okhttp3/benchmarks/OkHttp.java
+benchmarks/src/main/java/okhttp3/benchmarks/OkHttpAsync.java
+benchmarks/src/main/java/okhttp3/benchmarks/UrlConnection.java
+mockwebserver/src/main/java/okhttp3/internal/SslContextBuilder.java
+mockwebserver/src/main/java/okhttp3/internal/framed/FramedServer.java
+mockwebserver/src/main/java/okhttp3/internal/tls/HeldCertificate.java
+mockwebserver/src/main/java/okhttp3/internal/tls/SslClient.java
+okcurl/src/main/java/okhttp3/curl/Main.java
+okhttp-android-support/src/test/java/okhttp3/internal/huc/CacheAdapterTest.java
+okhttp-android-support/src/test/java/okhttp3/internal/huc/ResponseCacheTest.java
+okhttp-tests/pom.xml
+okhttp-tests/src/test/java/okhttp3/CacheTest.java
+okhttp-tests/src/test/java/okhttp3/CallTest.java
+okhttp-tests/src/test/java/okhttp3/CertificateChainCleanerTest.java
+okhttp-tests/src/test/java/okhttp3/CertificatePinnerTest.java
+okhttp-tests/src/test/java/okhttp3/ConnectionReuseTest.java
+okhttp-tests/src/test/java/okhttp3/DelegatingSSLSocket.java
+okhttp-tests/src/test/java/okhttp3/URLConnectionTest.java
+okhttp-tests/src/test/java/okhttp3/internal/ConnectionSpecSelectorTest.java
+okhttp-tests/src/test/java/okhttp3/internal/Jdk9PlatformTest.java
+okhttp-tests/src/test/java/okhttp3/internal/JdkWithJettyBootPlatformTest.java
+okhttp-tests/src/test/java/okhttp3/internal/PlatformTest.java
+okhttp-tests/src/test/java/okhttp3/internal/framed/HttpOverSpdyTest.java
+okhttp-tests/src/test/java/okhttp3/internal/http/RouteSelectorTest.java
+okhttp-tests/src/test/java/okhttp3/internal/tls/CertificatePinnerChainValidationTest.java
+okhttp-urlconnection/src/main/java/okhttp3/internal/huc/HttpsURLConnectionImpl.java
+okhttp-urlconnection/src/test/java/okhttp3/OkUrlFactoryTest.java
+okhttp-urlconnection/src/test/java/okhttp3/UrlConnectionCacheTest.java
+okhttp-ws-tests/src/test/java/okhttp3/ws/WebSocketCallTest.java
+okhttp/src/main/java/okhttp3/internal/AndroidPlatform.java
+okhttp/src/main/java/okhttp3/internal/Jdk9Platform.java
+okhttp/src/main/java/okhttp3/internal/JdkWithJettyBootPlatform.java
+okhttp/src/main/java/okhttp3/internal/Platform.java
+okhttp/src/main/java/okhttp3/internal/tls/BasicCertificateChainCleaner.java
+okhttp/src/main/java/okhttp3/internal/tls/CertificateChainCleaner.java
+okhttp/src/main/java/okhttp3/internal/tls/TrustRootIndex.java
+pom.xml
+Current month/year :  06/2016
+
+Current month/year :  07/2016
+
+mockwebserver/src/main/java/okhttp3/internal/tls/SslClient.java
+okhttp-android-support/src/test/java/okhttp3/internal/huc/ResponseCacheTest.java
+okhttp-tests/src/test/java/okhttp3/ConnectionReuseTest.java
+okhttp-tests/src/test/java/okhttp3/URLConnectionTest.java
+okhttp-tests/src/test/java/okhttp3/internal/framed/Http2ConnectionTest.java
+okhttp-tests/src/test/java/okhttp3/internal/tls/CertificatePinnerChainValidationTest.java
+Current month/year :  08/2016
+
+mockwebserver/src/main/java/okhttp3/internal/tls/SslClient.java
+okhttp-tests/src/test/java/okhttp3/CallTest.java
+okhttp-tests/src/test/java/okhttp3/RecordedResponse.java
+okhttp-tests/src/test/java/okhttp3/internal/tls/ClientAuthTest.java
+Current month/year :  09/2016
+
+Current month/year :  10/2016
+
+Current month/year :  11/2016
+
+Current month/year :  12/2016
+
+okhttp-tests/src/test/java/okhttp3/CertificateChainCleanerTest.java
+okhttp-tests/src/test/java/okhttp3/internal/tls/ClientAuthTest.java
+pom.xml
+Current month/year :  01/2017
+
+Current month/year :  02/2017
+
+Current month/year :  03/2017
+
+okhttp-testing-support/src/main/java/okhttp3/FakeDns.java
+okhttp-tests/src/test/java/okhttp3/CallTest.java
+okhttp-tests/src/test/java/okhttp3/ConnectionCoalescingTest.java
+okhttp-tests/src/test/java/okhttp3/internal/connection/RouteSelectorTest.java
+okhttp/src/main/java/okhttp3/Address.java
+okhttp/src/main/java/okhttp3/ConnectionPool.java
+okhttp/src/main/java/okhttp3/OkHttpClient.java
+okhttp/src/main/java/okhttp3/internal/Internal.java
+okhttp/src/main/java/okhttp3/internal/connection/RealConnection.java
+okhttp/src/main/java/okhttp3/internal/connection/StreamAllocation.java
+okhttp/src/main/java/okhttp3/internal/http/RealInterceptorChain.java
+okhttp/src/main/java/okhttp3/internal/tls/OkHostnameVerifier.java
+Current month/year :  04/2017
+
+Current month/year :  05/2017
+
+Current month/year :  06/2017
+
+okhttp/src/main/java/okhttp3/internal/platform/AndroidPlatform.java
+okhttp/src/main/java/okhttp3/internal/platform/Platform.java
+okhttp/src/main/java/okhttp3/internal/tls/BasicTrustRootIndex.java
+okhttp/src/main/java/okhttp3/internal/tls/CertificateChainCleaner.java
+okhttp/src/main/java/okhttp3/internal/tls/TrustRootIndex.java
+Current month/year :  07/2017
+
+okhttp-tests/src/test/java/okhttp3/EventListenerTest.java
+okhttp/src/main/java/okhttp3/EventListener.java
+okhttp/src/main/java/okhttp3/internal/connection/RealConnection.java
+okhttp/src/main/java/okhttp3/internal/connection/StreamAllocation.java
+Current month/year :  08/2017
+
+okhttp-tests/src/test/java/okhttp3/EventListenerTest.java
+okhttp-tests/src/test/java/okhttp3/RecordingEventListener.java
+okhttp-tests/src/test/java/okhttp3/internal/ws/RealWebSocketTest.java
+okhttp/src/main/java/okhttp3/CertificatePinner.java
+okhttp/src/main/java/okhttp3/EventListener.java
+okhttp/src/main/java/okhttp3/HttpUrl.java
+okhttp/src/main/java/okhttp3/OkHttpClient.java
+okhttp/src/main/java/okhttp3/RealCall.java
+okhttp/src/main/java/okhttp3/WebSocket.java
+okhttp/src/main/java/okhttp3/WebSocketListener.java
+okhttp/src/main/java/okhttp3/internal/Util.java
+okhttp/src/main/java/okhttp3/internal/connection/RealConnection.java
+okhttp/src/main/java/okhttp3/internal/connection/RouteSelector.java
+okhttp/src/main/java/okhttp3/internal/connection/StreamAllocation.java
+okhttp/src/main/java/okhttp3/internal/http/CallServerInterceptor.java
+okhttp/src/main/java/okhttp3/internal/http1/Http1Codec.java
+okhttp/src/main/java/okhttp3/internal/http2/Http2Codec.java
+okhttp/src/main/java/okhttp3/internal/platform/AndroidPlatform.java
+okhttp/src/main/java/okhttp3/internal/platform/Jdk9Platform.java
+okhttp/src/main/java/okhttp3/internal/platform/JdkWithJettyBootPlatform.java
+Current month/year :  09/2017
+
+okhttp-tests/src/test/java/okhttp3/CallTest.java
+okhttp-tests/src/test/java/okhttp3/RecordedResponse.java
+okhttp/src/main/java/okhttp3/OkHttpClient.java
+okhttp/src/main/java/okhttp3/internal/http1/Http1Codec.java
+okhttp/src/main/java/okhttp3/internal/platform/AndroidPlatform.java
+okhttp/src/main/java/okhttp3/internal/platform/Platform.java
+samples/crawler/src/main/java/okhttp3/sample/Crawler.java
+samples/guide/src/main/java/okhttp3/recipes/PrintEvents.java
+samples/simple-client/src/main/java/okhttp3/sample/OkHttpContributors.java
+Current month/year :  10/2017
+
+Current month/year :  11/2017
+
+okhttp-tests/src/test/java/okhttp3/internal/UtilTest.java
+okhttp/src/main/java/okhttp3/internal/Util.java
+Current month/year :  12/2017
+
+okhttp-tests/src/test/java/okhttp3/CallTest.java
+okhttp-tests/src/test/java/okhttp3/internal/ws/WebSocketHttpTest.java
+okhttp-tests/src/test/java/okhttp3/internal/ws/WebSocketReaderTest.java
+okhttp/src/main/java/okhttp3/OkHttpClient.java
+okhttp/src/main/java/okhttp3/Protocol.java
+okhttp/src/main/java/okhttp3/WebSocket.java
+okhttp/src/main/java/okhttp3/internal/connection/RealConnection.java
+okhttp/src/main/java/okhttp3/internal/http/RetryAndFollowUpInterceptor.java
+okhttp/src/main/java/okhttp3/internal/http2/Http2Reader.java
+samples/guide/src/main/java/okhttp3/recipes/Progress.java
