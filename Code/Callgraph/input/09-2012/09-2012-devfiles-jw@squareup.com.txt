@@ -1,0 +1,3 @@
+src/main/java/libcore/io/StrictLineReader.java
+src/main/java/libcore/net/http/HttpResponseCache.java
+src/main/java/libcore/net/spdy/SpdyWriter.java

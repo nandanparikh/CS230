@@ -8,13 +8,18 @@ import pandas as pd
 
 classes = set()
 project_name = sys.argv[1]
-op = 'input/' + sys.argv[2] + '/' + sys.argv[2] + '-' + sys.argv[1] + '-callgraph.txt'
+op = 'input/' + sys.argv[2] + '/' + sys.argv[2] + '-' + sys.argv[1] + '.txt'
 
 output_dir = 'output/' + sys.argv[2]
+condensed_dir = 'output/condensed'
+
+if not os.path.exists(condensed_dir):
+    os.makedirs(condensed_dir)
+
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-int_dir = output_dir + '/' + 'intermediate-files'
+int_dir = output_dir + '/' + 'intermediate-files' + '-' + sys.argv[3]
 if not os.path.exists(int_dir):
     os.mkdir(int_dir)
 
@@ -24,9 +29,10 @@ if not os.path.exists(csv_dir):
 
 filegraph = open(int_dir + '/' + sys.argv[2] + '-filegraph.txt', "w")
 condensed_filegraph = open(int_dir + '/' + sys.argv[2] + '-condensedfilegraph.txt', "w")
+condensed_filegraph_alt = open(condensed_dir + '/' + sys.argv[2] + '-condensedfilegraph.txt', "w+")
 edges = {}
 
-with open(op, encoding='utf-8') as f:
+with open(op, encoding='utf-16') as f:
     content = f.readlines()
 
 for line in content:
@@ -48,6 +54,7 @@ for line in content:
         #print("{} {}".format(class1, class2))
         filegraph.write("{} {}\n".format(class1, class2))
         condensed_filegraph.write("{} {}\n".format(class1.split("/")[-1], class2.split("/")[-1]))
+        condensed_filegraph_alt.write("{} {}\n".format(class1.split("/")[-1], class2.split("/")[-1]))
 
         class1 = class1.split("/")[-1]
         class2 = class2.split("/")[-1]
@@ -77,7 +84,7 @@ for line in content:
 
 dev_files =  set()
 
-with open('input/' + sys.argv[2] + '/' + sys.argv[2] + '-' + sys.argv[1] + '-devfiles-' + sys.argv[3] + '.txt', encoding='utf-8') as f:
+with open('input/' + sys.argv[2] + '/' + sys.argv[2] + '-devfiles-' + sys.argv[3] + '.txt', encoding='utf-8') as f:
     content = f.read().splitlines()
 
     for filename in content:

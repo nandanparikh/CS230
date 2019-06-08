@@ -1,0 +1,9 @@
+src/main/java/libcore/net/http/HttpConnection.java
+src/main/java/libcore/net/http/HttpEngine.java
+src/main/java/libcore/net/http/HttpTransport.java
+src/main/java/libcore/net/http/HttpsURLConnectionImpl.java
+src/main/java/libcore/net/spdy/SpdyConnection.java
+src/main/java/libcore/net/spdy/SpdyServer.java
+src/main/java/libcore/net/spdy/SpdyStream.java
+src/test/java/libcore/net/http/URLConnectionTest.java
+src/test/java/libcore/net/spdy/SpdyConnectionTest.java

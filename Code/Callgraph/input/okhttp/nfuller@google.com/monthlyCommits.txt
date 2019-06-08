@@ -1,0 +1,373 @@
+Author :  nfuller@google.com  
+Current month/year :  01/2012
+
+Current month/year :  02/2012
+
+Current month/year :  03/2012
+
+Current month/year :  04/2012
+
+Current month/year :  05/2012
+
+Current month/year :  06/2012
+
+Current month/year :  07/2012
+
+Current month/year :  08/2012
+
+Current month/year :  09/2012
+
+Current month/year :  10/2012
+
+Current month/year :  11/2012
+
+Current month/year :  12/2012
+
+Current month/year :  01/2013
+
+Current month/year :  02/2013
+
+Current month/year :  03/2013
+
+Current month/year :  04/2013
+
+Current month/year :  05/2013
+
+Current month/year :  06/2013
+
+Current month/year :  07/2013
+
+Current month/year :  08/2013
+
+Current month/year :  09/2013
+
+Current month/year :  10/2013
+
+Current month/year :  11/2013
+
+Current month/year :  12/2013
+
+Current month/year :  01/2014
+
+Current month/year :  02/2014
+
+Current month/year :  03/2014
+
+Android.mk
+CHANGELOG.md
+README.android
+README.md
+android/main/java/com/squareup/okhttp/HttpHandler.java
+android/main/java/com/squareup/okhttp/HttpsHandler.java
+android/main/java/com/squareup/okhttp/internal/Platform.java
+benchmarks/README.md
+benchmarks/pom.xml
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/ApacheHttpClient.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/Benchmark.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/Client.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/HttpClient.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/NettyHttpClient.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/OkHttp.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/OkHttpAsync.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/SynchronousHttpClient.java
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/UrlConnection.java
+concurrency.md
+mockwebserver/README.md
+mockwebserver/pom.xml
+mockwebserver/src/main/java/com/squareup/okhttp/internal/SslContextBuilder.java
+mockwebserver/src/main/java/com/squareup/okhttp/internal/spdy/SpdyServer.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockResponse.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockWebServer.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/PushPromise.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/RecordedRequest.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/SocketPolicy.java
+mockwebserver/src/test/java/com/squareup/okhttp/mockwebserver/CustomDispatcherTest.java
+okcurl/README.md
+okcurl/pom.xml
+okcurl/src/main/java/com/squareup/okhttp/curl/Main.java
+okcurl/src/main/resources/okcurl-version.properties
+okcurl/src/test/java/com/squareup/okhttp/curl/MainTest.java
+okhttp-apache/pom.xml
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/FrameReader.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/FrameWriter.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/Hpack.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/Http20Draft04.java
+okhttp-protocols/src/main/java/com/squareup/okhttp/internal/spdy/NameValueBlockReader.java
+okhttp-protocols/src/test/java/com/squareup/okhttp/internal/spdy/HpackTest.java
+okhttp-protocols/src/test/java/com/squareup/okhttp/internal/spdy/SpdyConnectionTest.java
+okhttp-tests/pom.xml
+okhttp-tests/src/test/java/com/squareup/okhttp/AsyncApiTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/ConnectionPoolTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DispatcherTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/MediaTypeTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/RecordedResponse.java
+okhttp-tests/src/test/java/com/squareup/okhttp/RecordingReceiver.java
+okhttp-tests/src/test/java/com/squareup/okhttp/RequestTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/SyncApiTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/BitArrayTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/RecordingAuthenticator.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/RecordingHostnameVerifier.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/RecordingOkAuthenticator.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/CookiesTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ExternalHttp2Example.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ExternalSpdyExample.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HeadersTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HttpOverHttp20Draft09Test.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HttpOverSpdy3Test.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HttpOverSpdyTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HttpResponseCacheTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/JavaApiConverterTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ResponseCacheAdapterTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ResponseCacheTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/RouteSelectorTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/StatusLineTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLEncodingTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/BaseTestHandler.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/HpackDraft05Test.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/Http20Draft09Test.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/HuffmanTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/MockSpdyPeer.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/SettingsTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/Spdy3Test.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/SpdyConnectionTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/FakeSSLSession.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/HostnameVerifierTest.java
+okhttp/pom.xml
+okhttp/src/main/java/com/squareup/okhttp/Address.java
+okhttp/src/main/java/com/squareup/okhttp/CacheControl.java
+okhttp/src/main/java/com/squareup/okhttp/Connection.java
+okhttp/src/main/java/com/squareup/okhttp/ConnectionPool.java
+okhttp/src/main/java/com/squareup/okhttp/Dispatcher.java
+okhttp/src/main/java/com/squareup/okhttp/Failure.java
+okhttp/src/main/java/com/squareup/okhttp/Handshake.java
+okhttp/src/main/java/com/squareup/okhttp/Headers.java
+okhttp/src/main/java/com/squareup/okhttp/HttpResponseCache.java
+okhttp/src/main/java/com/squareup/okhttp/Job.java
+okhttp/src/main/java/com/squareup/okhttp/OkAuthenticator.java
+okhttp/src/main/java/com/squareup/okhttp/OkHttpClient.java
+okhttp/src/main/java/com/squareup/okhttp/OkResponseCache.java
+okhttp/src/main/java/com/squareup/okhttp/Protocol.java
+okhttp/src/main/java/com/squareup/okhttp/Request.java
+okhttp/src/main/java/com/squareup/okhttp/Response.java
+okhttp/src/main/java/com/squareup/okhttp/ResponseSource.java
+okhttp/src/main/java/com/squareup/okhttp/Route.java
+okhttp/src/main/java/com/squareup/okhttp/RouteDatabase.java
+okhttp/src/main/java/com/squareup/okhttp/TunnelRequest.java
+okhttp/src/main/java/com/squareup/okhttp/internal/AbstractOutputStream.java
+okhttp/src/main/java/com/squareup/okhttp/internal/BitArray.java
+okhttp/src/main/java/com/squareup/okhttp/internal/DiskLruCache.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Dns.java
+okhttp/src/main/java/com/squareup/okhttp/internal/FaultRecoveringOutputStream.java
+okhttp/src/main/java/com/squareup/okhttp/internal/NamedRunnable.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Platform.java
+okhttp/src/main/java/com/squareup/okhttp/internal/StrictLineReader.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Util.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/AbstractHttpInputStream.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/CacheStrategy.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/DelegatingHttpsURLConnection.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HeaderParser.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpAuthenticator.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpConnection.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpDate.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpEngine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpMethod.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpTransport.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpsEngine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/JavaApiConverter.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/OkHeaders.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/Policy.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RawHeaders.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RequestHeaders.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RequestLine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/ResponseCacheAdapter.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/ResponseHeaders.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RetryableSink.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RouteSelector.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/SpdyTransport.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/StatusLine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/Transport.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/ErrorCode.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/FrameReader.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/FrameWriter.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Header.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/HeadersMode.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/HpackDraft05.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Http20Draft09.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Huffman.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/NameValueBlockReader.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Ping.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/PushObserver.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Settings.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Spdy3.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/SpdyConnection.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/SpdyStream.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Variant.java
+okhttp/src/test/java/com/squareup/okhttp/AsyncApiTest.java
+okhttp/src/test/java/com/squareup/okhttp/internal/FaultRecoveringOutputStreamTest.java
+okhttp/src/test/java/com/squareup/okhttp/internal/StrictLineReaderTest.java
+okhttp/src/test/java/com/squareup/okhttp/internal/http/RawHeadersTest.java
+okio/pom.xml
+okio/src/main/java/okio/Base64.java
+okio/src/main/java/okio/BufferedSink.java
+okio/src/main/java/okio/BufferedSource.java
+okio/src/main/java/okio/ByteString.java
+okio/src/main/java/okio/Deadline.java
+okio/src/main/java/okio/DeflaterSink.java
+okio/src/main/java/okio/GzipSource.java
+okio/src/main/java/okio/InflaterSource.java
+okio/src/main/java/okio/OkBuffer.java
+okio/src/main/java/okio/Okio.java
+okio/src/main/java/okio/RealBufferedSink.java
+okio/src/main/java/okio/RealBufferedSource.java
+okio/src/main/java/okio/Segment.java
+okio/src/main/java/okio/SegmentPool.java
+okio/src/main/java/okio/Sink.java
+okio/src/main/java/okio/Source.java
+okio/src/main/java/okio/Util.java
+okio/src/test/java/okio/ByteStringTest.java
+okio/src/test/java/okio/DeflaterSinkTest.java
+okio/src/test/java/okio/GzipSourceTest.java
+okio/src/test/java/okio/InflaterSourceTest.java
+okio/src/test/java/okio/MockSink.java
+okio/src/test/java/okio/OkBufferReadUtf8LineTest.java
+okio/src/test/java/okio/OkBufferTest.java
+okio/src/test/java/okio/OkioTest.java
+okio/src/test/java/okio/ReadUtf8LineTest.java
+okio/src/test/java/okio/RealBufferedSinkTest.java
+okio/src/test/java/okio/RealBufferedSourceReadUtf8LineTest.java
+okio/src/test/java/okio/RealBufferedSourceTest.java
+parent.iws
+pom.xml
+samples/crawler/pom.xml
+samples/crawler/src/main/java/com/squareup/okhttp/sample/Crawler.java
+samples/guide/pom.xml
+samples/pom.xml
+samples/simple-client/pom.xml
+samples/simple-client/src/main/java/com/squareup/okhttp/sample/OkHttpContributors.java
+samples/static-server/pom.xml
+samples/static-server/src/main/java/com/squareup/okhttp/sample/SampleServer.java
+website/index.html
+Current month/year :  04/2014
+
+CHANGELOG.md
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/Dispatcher.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockWebServer.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/QueueDispatcher.java
+mockwebserver/src/test/java/com/squareup/okhttp/mockwebserver/MockWebServerTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/ConnectionPoolTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/JavaApiConverterTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ThreadInterruptTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp/src/main/java/com/squareup/okhttp/Connection.java
+okhttp/src/main/java/com/squareup/okhttp/ConnectionPool.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Platform.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpEngine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/JavaApiConverter.java
+okio/src/main/java/okio/Deadline.java
+Current month/year :  05/2014
+
+Android.mk
+jarjar-rules.txt
+Current month/year :  06/2014
+
+Current month/year :  07/2014
+
+okhttp-tests/src/test/java/com/squareup/okhttp/RecordedResponse.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/RecordingOkAuthenticator.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp/src/main/java/com/squareup/okhttp/Job.java
+okhttp/src/main/java/com/squareup/okhttp/Response.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/CacheStrategy.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpEngine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java
+Current month/year :  08/2014
+
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/HttpDateTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ResponseCacheTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/huc/ResponseCacheTest.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpDate.java
+Current month/year :  09/2014
+
+Android.mk
+android/main/java/com/squareup/okhttp/ConfigAwareConnectionPool.java
+android/main/java/com/squareup/okhttp/HttpHandler.java
+android/main/java/com/squareup/okhttp/HttpsHandler.java
+android/test/java/com.squareup.okhttp/ConfigAwareConnectionPoolTest.java
+Current month/year :  10/2014
+
+Android.mk
+android/main/java/com/squareup/okhttp/internal/OptionalMethod.java
+android/main/java/com/squareup/okhttp/internal/Platform.java
+android/test/java/com/squareup/okhttp/internal/OptionalMethodTest.java
+android/test/java/com/squareup/okhttp/internal/PlatformTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ThreadInterruptTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+Current month/year :  11/2014
+
+android/main/java/com/squareup/okhttp/ConfigAwareConnectionPool.java
+android/main/java/com/squareup/okhttp/internal/Platform.java
+android/test/java/com/squareup/okhttp/internal/PlatformTest.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockWebServer.java
+okhttp-tests/src/test/java/com/squareup/okhttp/AsyncApiTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/ConnectionPoolTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSSLSocket.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSSLSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingServerSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/FallbackTestClientSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/LimitedProtocolsSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/SyncApiTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/OptionalMethodTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/TlsConfigurationTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/TlsFallbackStrategyTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/RouteSelectorTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ThreadInterruptTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/spdy/MockSpdyPeer.java
+okhttp-urlconnection/src/test/java/com/squareup/okhttp/OkUrlFactoryTest.java
+okhttp/src/main/java/com/squareup/okhttp/Connection.java
+okhttp/src/main/java/com/squareup/okhttp/ConnectionPool.java
+okhttp/src/main/java/com/squareup/okhttp/Route.java
+okhttp/src/main/java/com/squareup/okhttp/internal/OptionalMethod.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Platform.java
+okhttp/src/main/java/com/squareup/okhttp/internal/TlsConfiguration.java
+okhttp/src/main/java/com/squareup/okhttp/internal/TlsFallbackStrategy.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpEngine.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RouteSelector.java
+Current month/year :  12/2014
+
+Android.mk
+benchmarks/pom.xml
+benchmarks/src/main/java/com/squareup/okhttp/benchmarks/Benchmark.java
+mockwebserver/src/main/java/com/squareup/okhttp/mockwebserver/MockWebServer.java
+okcurl/pom.xml
+okhttp-tests/src/test/java/com/squareup/okhttp/CallTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/ConnectionPoolTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSSLSocket.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSSLSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingServerSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/DelegatingSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/FallbackTestClientSocketFactory.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/DisconnectTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ExternalHttp2Example.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/ExternalSpdyExample.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/RouteSelectorTest.java
+okhttp-tests/src/test/java/com/squareup/okhttp/internal/http/URLConnectionTest.java
+okhttp/src/main/java/com/squareup/okhttp/ConnectionPool.java
+okhttp/src/main/java/com/squareup/okhttp/ConnectionSpec.java
+okhttp/src/main/java/com/squareup/okhttp/OkHttpClient.java
+okhttp/src/main/java/com/squareup/okhttp/Protocol.java
+okhttp/src/main/java/com/squareup/okhttp/Route.java
+okhttp/src/main/java/com/squareup/okhttp/internal/Platform.java
+okhttp/src/main/java/com/squareup/okhttp/internal/http/RouteSelector.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/SpdyConnection.java
+okhttp/src/main/java/com/squareup/okhttp/internal/spdy/Variant.java
+pom.xml

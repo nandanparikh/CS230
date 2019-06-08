@@ -35,7 +35,7 @@ do
 		CHECKOUT=`git checkout $hashValue`
 		echo $CHECKOUT
 
-		JAR=`jar -cvf $FOLDER/okhttp"_"${MONTH[$index]}"_"$FROM".jar" .`
+		JAR=`jar -cvf $FOLDER/${MONTH[$index]}"-"$FROM"-exoplayer.jar" .`
 		echo $JAR  > /dev/null
 	
 		((index++))

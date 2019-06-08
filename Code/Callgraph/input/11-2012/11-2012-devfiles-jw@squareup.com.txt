@@ -1,0 +1,3 @@
+src/main/java/libcore/net/http/HeaderParser.java
+src/main/java/libcore/net/http/HttpAuthenticator.java
+src/test/java/libcore/net/http/URLConnectionTest.java
