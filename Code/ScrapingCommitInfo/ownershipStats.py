@@ -27,7 +27,10 @@ for author in dirlist:
 
 	fileCount = {}
 
-	file = open(shellStatsFolder+"/"+author+"/allMonthlyCommits.txt", "r");
+	try:
+		file = open(shellStatsFolder+"/"+author+"/allMonthlyCommits.txt", "r");
+	except:
+		continue;
 
 	for line in file:
 		if "Current month" not in line:

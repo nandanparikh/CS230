@@ -1,4 +1,3 @@
-Author :  cdrolle@google.com  
 Current month/year :  01/2016
 
 library/src/main/java/com/google/android/exoplayer/dash/DashChunkSource.java

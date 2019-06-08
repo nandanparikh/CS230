@@ -1,4 +1,3 @@
-Author :  aquilescanta@google.com  
 Current month/year :  01/2016
 
 library/src/androidTest/java/com/google/android/exoplayer/testutil/TestUtil.java

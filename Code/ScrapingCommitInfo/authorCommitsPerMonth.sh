@@ -40,7 +40,7 @@ for author in $AUTHORS
 do
 	echo "For author : " $author
 	mkdir $FOLDER/$author
-	echo "Author : " $author " " >> $FOLDER/$author/monthlyCommits.txt
+	#echo "Author : " $author " " >> $FOLDER/$author/monthlyCommits.txt
 	from=$FROM
 	while [ $from -lt $TO ]
 	do

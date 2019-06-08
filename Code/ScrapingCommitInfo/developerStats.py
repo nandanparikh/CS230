@@ -46,7 +46,11 @@ for author in dirlist:
 	allFilesForAuthor = []
 	monthlyCount = {}
 
-	file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
+	try:
+		file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
+	except:
+		continue;
+		
 	month = 0
 	newFiles = 0
 	uniqueFilesWorked = []
