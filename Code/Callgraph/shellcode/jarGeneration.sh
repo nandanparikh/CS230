@@ -43,7 +43,3 @@ do
 	((FROM++))
 done
 
-cd ~/jarStorage/
-ls -l
-
-#Get the Hashes
