@@ -10,6 +10,10 @@ dirlist = []
 for root, dirs, files in os.walk(shellStatsFolder):
     dirlist += dirs
 
+authorlist = "\n".join(dirlist)
+with open("output/authors.txt", "w+") as f:
+	f.write(authorlist)
+
 #print(dirlist)
 
 '''

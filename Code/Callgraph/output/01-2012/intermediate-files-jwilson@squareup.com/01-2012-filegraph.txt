@@ -1,7 +1,6 @@
 com/google/mockwebserver/SocketPolicy com/google/mockwebserver/SocketPolicy
 com/google/mockwebserver/MockResponse com/google/mockwebserver/MockResponse
 com/google/mockwebserver/MockResponse com/google/mockwebserver/SocketPolicy
-com/google/mockwebserver/MockResponse [B
 com/google/mockwebserver/MockWebServer com/google/mockwebserver/MockWebServer$1
 com/google/mockwebserver/MockWebServer com/google/mockwebserver/MockWebServer
 com/google/mockwebserver/MockWebServer com/google/mockwebserver/MockResponse
@@ -38,13 +37,8 @@ com/google/mockwebserver/RecordedRequest com/google/mockwebserver/RecordedReques
 com/google/mockwebserver/RecordedRequest javax/net/ssl/SSLSocket
 com/google/mockwebserver/RecordedRequest javax/net/ssl/SSLSession
 com/google/mockwebserver/RecordedRequest [B
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServerTest$1
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServerTest
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockResponse
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServer
 com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServerTest
 com/google/mockwebserver/MockWebServerTest junit/framework/TestCase
 com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServer
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/RecordedRequest
 com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockResponse
-com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/MockWebServerTest$1
+com/google/mockwebserver/MockWebServerTest com/google/mockwebserver/RecordedRequest

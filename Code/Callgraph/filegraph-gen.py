@@ -23,7 +23,7 @@ int_dir = output_dir + '/' + 'intermediate-files' + '-' + sys.argv[3]
 if not os.path.exists(int_dir):
     os.mkdir(int_dir)
 
-csv_dir = output_dir + '/' + 'csv-files' + sys.argv[3]
+csv_dir = 'output' + '/' + 'csv-files' + sys.argv[3]
 if not os.path.exists(csv_dir):
     os.mkdir(csv_dir)
 
@@ -153,5 +153,5 @@ for src, deps in edges.items():
 			edges_df = edges_df.append(pd.Series([already_added_nodes.index(src), already_added_nodes.index(dep), 'directed', 1], index=edges_df.columns), ignore_index=True)
 			already_added.add((src, dep))
 
-edges_df.to_csv(csv_dir + '/edges.csv', index=False)
-nodes_df.to_csv(csv_dir + '/nodes.csv', index_label='id')
+edges_df.to_csv(csv_dir + '/' + sys.argv[2] + 'edges.csv', index=False)
+nodes_df.to_csv(csv_dir + '/' + sys.argv[2] + 'nodes.csv', index_label='id')
