@@ -5,6 +5,7 @@ USAGE :
 sh findAllInformationForRepo gitRepoFolder yearFrom yearTo resultsDirectory
 Example : sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 $PWD/okhttpCheck
 
+sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 /Users/walled/Documents/CS230/CS230/Code/testResults/ExoPlayer
 
 
 #For okhttp Years 2012 to 2013
@@ -35,6 +36,10 @@ python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommit
 
 #CALL GRAPH FILES REQ FOR HOPS
 python formatCallGraphData.py /Users/walled/Documents/CS230/CS230/Code/testResults/CallGraph-okhttp $PWD/resultsForHops
-
+python formatCallGraphData.py /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraph /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraphFormattedTxt
 
 find . -type f -print0 | xargs -0 dos2unix
+
+
+#HOP INFO:
+python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/ExoPlayer /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraphFormattedTxt

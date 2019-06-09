@@ -34,6 +34,7 @@ Current month/year :  08/2016
 library/src/main/java/com/google/android/exoplayer/drm/ExoMediaDrm.java
 library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaDrm.java
 library/src/main/java/com/google/android/exoplayer/drm/StreamingDrmSessionManager.java
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java
 Current month/year :  09/2016
 
 Current month/year :  10/2016
@@ -75,6 +76,8 @@ library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImpl.java
 library/core/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
 library/core/src/main/java/com/google/android/exoplayer2/SimpleExoPlayer.java
 library/core/src/main/java/com/google/android/exoplayer2/drm/DrmSession.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/DrmSession.java
+library/core/src/main/java/com/google/android/exoplayer2/extractor/mp4/AtomParsers.java
 library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
 library/core/src/main/java/com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.java
 Current month/year :  07/2017

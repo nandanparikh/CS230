@@ -53,6 +53,8 @@ library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashMan
 library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
 Current month/year :  08/2016
 
+library/src/main/java/com/google/android/exoplayer2/upstream/DefaultDataSource.java
+library/src/main/java/com/google/android/exoplayer2/upstream/DefaultDataSourceFactory.java
 Current month/year :  09/2016
 
 library/src/androidTest/assets/rawcc/sample.rawcc.0.dump
@@ -81,6 +83,7 @@ Current month/year :  11/2016
 library/src/androidTest/java/com/google/android/exoplayer2/FormatTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractorTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParserTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/util/UtilTest.java
 library/src/main/java/com/google/android/exoplayer2/Format.java
 library/src/main/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractor.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
@@ -89,10 +92,9 @@ library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashMan
 library/src/main/java/com/google/android/exoplayer2/text/SubtitleDecoderFactory.java
 library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
 library/src/main/java/com/google/android/exoplayer2/util/MimeTypes.java
+library/src/main/java/com/google/android/exoplayer2/util/Util.java
 Current month/year :  12/2016
 
-library/src/androidTest/java/com/google/android/exoplayer/util/UtilTest.java
-library/src/main/java/com/google/android/exoplayer/util/Util.java
 library/src/main/java/com/google/android/exoplayer2/text/Cue.java
 library/src/main/java/com/google/android/exoplayer2/text/cea/Cea608Decoder.java
 library/src/main/java/com/google/android/exoplayer2/ui/SubtitlePainter.java

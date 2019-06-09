@@ -50,6 +50,7 @@ demo/src/main/java/com/google/android/exoplayer/demo/player/SmoothStreamingSourc
 demo/src/main/java/com/google/android/exoplayer/demo/player/SourceBuilder.java
 demo/src/main/java/com/google/android/exoplayer/demo/ui/TrackSelectionHelper.java
 demo/src/main/java/com/google/android/exoplayer2/demo/DemoApplication.java
+demo/src/main/java/com/google/android/exoplayer2/demo/DemoUtil.java
 demo/src/main/java/com/google/android/exoplayer2/demo/EventLogger.java
 demo/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
 demo/src/main/java/com/google/android/exoplayer2/demo/SampleChooserActivity.java
@@ -1392,6 +1393,7 @@ doc/reference/com/google/android/exoplayer2/source/ads/package-summary.html
 doc/reference/com/google/android/exoplayer2/source/ads/package-tree.html
 doc/reference/com/google/android/exoplayer2/source/chunk/BaseMediaChunk.html
 doc/reference/com/google/android/exoplayer2/source/chunk/Chunk.html
+doc/reference/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.SeekMapOutput.html
 doc/reference/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.SingleTrackMetadataOutput.html
 doc/reference/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.TrackOutputProvider.html
 doc/reference/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.html
@@ -2244,6 +2246,7 @@ extensions/cronet/jniLibs/x86/libcronet.so
 extensions/cronet/jniLibs/x86_64/libcronet.so
 extensions/cronet/libs/README.md
 extensions/cronet/src/androidTest/AndroidManifest.xml
+extensions/cronet/src/androidTest/java/com/google/android/exoplayer/ext/cronet/ByteArrayUploadDataProviderTest.java
 extensions/cronet/src/androidTest/java/com/google/android/exoplayer/ext/cronet/CronetDataSourceTest.java
 extensions/cronet/src/androidTest/java/com/google/android/exoplayer2/ext/cronet/ByteArrayUploadDataProviderTest.java
 extensions/cronet/src/androidTest/java/com/google/android/exoplayer2/ext/cronet/CronetDataSourceTest.java
@@ -2332,7 +2335,9 @@ extensions/flac/src/main/proguard.cfg
 extensions/flac/src/main/project.properties
 extensions/gvr/README.md
 extensions/gvr/build.gradle
+extensions/gvr/src/main/AndroidManifest.xml
 extensions/gvr/src/main/java/com/google/android/exoplayer2/ext/gvr/GvrAudioProcessor.java
+extensions/gvr/src/main/java/com/google/android/exoplayer2/ext/gvr/GvrBufferProcessor.java
 extensions/ima/README.md
 extensions/ima/build.gradle
 extensions/ima/src/main/AndroidManifest.xml
@@ -2589,7 +2594,6 @@ library/core/src/androidTest/assets/wav/sample.wav.3.dump
 library/core/src/androidTest/assets/webm/vorbis_codec_private
 library/core/src/androidTest/assets/webvtt/empty
 library/core/src/androidTest/assets/webvtt/typical
-library/core/src/androidTest/assets/webvtt/typical_with_bad_timestamps
 library/core/src/androidTest/assets/webvtt/typical_with_comments
 library/core/src/androidTest/assets/webvtt/typical_with_identifiers
 library/core/src/androidTest/assets/webvtt/with_bad_cue_header
@@ -2976,6 +2980,9 @@ library/core/src/main/java/com/google/android/exoplayer2/source/hls/playlist/Hls
 library/core/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylist.java
 library/core/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylistParser.java
 library/core/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylistTracker.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/Downloader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/DownloaderException.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/DownloaderFactory.java
 library/core/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/DefaultSsChunkSource.java
 library/core/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsChunkSource.java
 library/core/src/main/java/com/google/android/exoplayer2/source/smoothstreaming/SsMediaPeriod.java
@@ -3355,6 +3362,7 @@ library/dash/src/main/java/com/google/android/exoplayer2/source/dash/EventSample
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.java
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifest.java
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/Descriptor.java
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/EventStream.java
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/Period.java
 library/dash/src/main/java/com/google/android/exoplayer2/source/dash/manifest/RangedUri.java
@@ -3433,6 +3441,10 @@ library/src/androidTest/assets/mkv/ssasample.mkv.0.dump
 library/src/androidTest/assets/mkv/ssasample.mkv.1.dump
 library/src/androidTest/assets/mkv/ssasample.mkv.2.dump
 library/src/androidTest/assets/mkv/ssasample.mkv.3.dump
+library/src/androidTest/assets/mkv/subsample_encrypted_altref.webm
+library/src/androidTest/assets/mkv/subsample_encrypted_altref.webm.0.dump
+library/src/androidTest/assets/mkv/subsample_encrypted_noaltref.webm
+library/src/androidTest/assets/mkv/subsample_encrypted_noaltref.webm.0.dump
 library/src/androidTest/assets/mp3/bear.mp3
 library/src/androidTest/assets/mp3/bear.mp3.0.dump
 library/src/androidTest/assets/mp3/bear.mp3.1.dump
@@ -3489,6 +3501,7 @@ library/src/androidTest/assets/rawcc/sample.rawcc.0.dump
 library/src/androidTest/assets/ssa/typical
 library/src/androidTest/assets/subrip/typical_negative_timestamps
 library/src/androidTest/assets/subrip/typical_with_byte_order_mark
+library/src/androidTest/assets/ts/sample.ac3
 library/src/androidTest/assets/ts/sample.ac3.0.dump
 library/src/androidTest/assets/ts/sample.adts
 library/src/androidTest/assets/ts/sample.adts.0.dump
@@ -3636,6 +3649,7 @@ library/src/androidTest/java/com/google/android/exoplayer2/extractor/ogg/VorbisB
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/ogg/VorbisReaderTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/ogg/VorbisUtilTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/rawcc/RawCcExtractorTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/ts/Ac3ExtractorTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/ts/AdtsExtractorTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/ts/AdtsReaderTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/extractor/ts/PsExtractorTest.java
@@ -4095,6 +4109,8 @@ library/src/main/java/com/google/android/exoplayer2/MediaCodecVideoRenderer.java
 library/src/main/java/com/google/android/exoplayer2/MediaCodecVideoTrackRenderer.java
 library/src/main/java/com/google/android/exoplayer2/MediaPeriod.java
 library/src/main/java/com/google/android/exoplayer2/MediaSource.java
+library/src/main/java/com/google/android/exoplayer2/MediaTimeline.java
+library/src/main/java/com/google/android/exoplayer2/MediaWindow.java
 library/src/main/java/com/google/android/exoplayer2/MergingMediaPeriod.java
 library/src/main/java/com/google/android/exoplayer2/MergingMediaSource.java
 library/src/main/java/com/google/android/exoplayer2/MultiMediaPeriod.java
@@ -4122,15 +4138,20 @@ library/src/main/java/com/google/android/exoplayer2/TrackStream.java
 library/src/main/java/com/google/android/exoplayer2/VideoFrameReleaseTimeHelper.java
 library/src/main/java/com/google/android/exoplayer2/VideoRendererEventListener.java
 library/src/main/java/com/google/android/exoplayer2/VideoTrackRendererEventListener.java
+library/src/main/java/com/google/android/exoplayer2/Window.java
 library/src/main/java/com/google/android/exoplayer2/audio/Ac3Util.java
 library/src/main/java/com/google/android/exoplayer2/audio/AudioCapabilities.java
 library/src/main/java/com/google/android/exoplayer2/audio/AudioCapabilitiesReceiver.java
 library/src/main/java/com/google/android/exoplayer2/audio/AudioDecoderException.java
+library/src/main/java/com/google/android/exoplayer2/audio/AudioProcessor.java
 library/src/main/java/com/google/android/exoplayer2/audio/AudioRendererEventListener.java
 library/src/main/java/com/google/android/exoplayer2/audio/AudioTrack.java
 library/src/main/java/com/google/android/exoplayer2/audio/BufferProcessor.java
+library/src/main/java/com/google/android/exoplayer2/audio/ChannelMappingAudioProcessor.java
+library/src/main/java/com/google/android/exoplayer2/audio/ChannelMappingBufferProcessor.java
 library/src/main/java/com/google/android/exoplayer2/audio/DtsUtil.java
 library/src/main/java/com/google/android/exoplayer2/audio/MediaCodecAudioRenderer.java
+library/src/main/java/com/google/android/exoplayer2/audio/ResamplingAudioProcessor.java
 library/src/main/java/com/google/android/exoplayer2/audio/ResamplingBufferProcessor.java
 library/src/main/java/com/google/android/exoplayer2/audio/SimpleDecoderAudioRenderer.java
 library/src/main/java/com/google/android/exoplayer2/chunk/BaseMediaChunk.java
@@ -4174,6 +4195,10 @@ library/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSessionManager
 library/src/main/java/com/google/android/exoplayer2/drm/DrmInitData.java
 library/src/main/java/com/google/android/exoplayer2/drm/DrmSession.java
 library/src/main/java/com/google/android/exoplayer2/drm/DrmSessionManager.java
+library/src/main/java/com/google/android/exoplayer2/drm/ExoMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer2/drm/ExoMediaDrm.java
+library/src/main/java/com/google/android/exoplayer2/drm/FrameworkMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer2/drm/FrameworkMediaDrm.java
 library/src/main/java/com/google/android/exoplayer2/drm/HttpMediaDrmCallback.java
 library/src/main/java/com/google/android/exoplayer2/drm/KeysExpiredException.java
 library/src/main/java/com/google/android/exoplayer2/drm/MediaDrmCallback.java
@@ -4332,6 +4357,7 @@ library/src/main/java/com/google/android/exoplayer2/source/ClippingMediaPeriod.j
 library/src/main/java/com/google/android/exoplayer2/source/ClippingMediaSource.java
 library/src/main/java/com/google/android/exoplayer2/source/CompositeSequenceableLoader.java
 library/src/main/java/com/google/android/exoplayer2/source/ConcatenatingMediaSource.java
+library/src/main/java/com/google/android/exoplayer2/source/EmptySampleStream.java
 library/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaPeriod.java
 library/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaSource.java
 library/src/main/java/com/google/android/exoplayer2/source/LoopingMediaSource.java
@@ -4342,6 +4368,7 @@ library/src/main/java/com/google/android/exoplayer2/source/MergingMediaSource.ja
 library/src/main/java/com/google/android/exoplayer2/source/SampleStream.java
 library/src/main/java/com/google/android/exoplayer2/source/SeekWindow.java
 library/src/main/java/com/google/android/exoplayer2/source/SequenceableLoader.java
+library/src/main/java/com/google/android/exoplayer2/source/SinglePeriodMediaTimeline.java
 library/src/main/java/com/google/android/exoplayer2/source/SinglePeriodTimeline.java
 library/src/main/java/com/google/android/exoplayer2/source/SingleSampleMediaPeriod.java
 library/src/main/java/com/google/android/exoplayer2/source/SingleSampleMediaSource.java
@@ -4367,6 +4394,7 @@ library/src/main/java/com/google/android/exoplayer2/source/dash/DashChunkSource.
 library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaPeriod.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/DashSegmentIndex.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DashUtil.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/DashWrappingSegmentIndex.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.java
@@ -4600,6 +4628,7 @@ library/src/main/javadoc/com/google/android/exoplayer2/doc-files/exoplayer-state
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/exoplayer-threading-model.png
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/exoplayer-threading-model.svg
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/renderer-states.png
+library/src/main/javadoc/com/google/android/exoplayer2/doc-files/renderer-states.svg
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/timeline-advanced.svg
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/timeline-live-indefinite.svg
 library/src/main/javadoc/com/google/android/exoplayer2/doc-files/timeline-live-limited.svg
@@ -4731,12 +4760,14 @@ library/src/main/res/values-tr/strings.xml
 library/src/main/res/values-uk/strings.xml
 library/src/main/res/values-ur-rPK/strings.xml
 library/src/main/res/values-uz-rUZ/strings.xml
+library/src/main/res/values-v11/styles.xml
 library/src/main/res/values-vi/strings.xml
 library/src/main/res/values-zh-rCN/strings.xml
 library/src/main/res/values-zh-rHK/strings.xml
 library/src/main/res/values-zh-rTW/strings.xml
 library/src/main/res/values-zu/strings.xml
 library/src/main/res/values/attrs.xml
+library/src/main/res/values/constants.xml
 library/src/main/res/values/ids.xml
 library/src/main/res/values/strings.xml
 library/src/main/res/values/styles.xml
@@ -4984,6 +5015,7 @@ testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeMediaClockRen
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeMediaPeriod.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeMediaSource.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeRenderer.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeSampleStream.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeShuffleOrder.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeSimpleExoPlayer.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeTimeline.java

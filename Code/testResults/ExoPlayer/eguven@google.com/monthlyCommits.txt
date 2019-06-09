@@ -428,10 +428,29 @@ testutils/src/main/java/com/google/android/exoplayer/testutil/TestUtil.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeExtractorOutput.java
 Current month/year :  08/2016
 
+demo/src/main/AndroidManifest.xml
+demo/src/main/java/com/google/android/exoplayer2/demo/DemoApplication.java
+demo/src/main/java/com/google/android/exoplayer2/demo/PlayerActivity.java
+library/build.gradle
+library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheDataSourceTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheSpanTest.java
+library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/SimpleCacheTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/util/UtilTest.java
+library/src/main/java/com/google/android/exoplayer/upstream/cache/CacheSpan.java
 library/src/main/java/com/google/android/exoplayer2/ExoPlayerImplInternal.java
+library/src/main/java/com/google/android/exoplayer2/source/ExtractorMediaPeriod.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DashMediaSource.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/Cache.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSink.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSource.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheEvictor.java
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheSpan.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/LeastRecentlyUsedCacheEvictor.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/NoOpCacheEvictor.java
+library/src/main/java/com/google/android/exoplayer2/upstream/cache/SimpleCache.java
+library/src/main/java/com/google/android/exoplayer2/util/Util.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeDataSource.java
+testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeExtractorOutput.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/TestUtil.java
 Current month/year :  09/2016
 
@@ -515,7 +534,6 @@ Current month/year :  12/2016
 library/src/main/java/com/google/android/exoplayer/upstream/cache/CachedContentIndex.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
 library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/SegmentBase.java
-library/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java
 playbacktests/build.gradle
 playbacktests/src/androidTest/AndroidManifest.xml
 playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/Mp3PlaybackTest.java
@@ -559,8 +577,12 @@ extensions/flac/proguard-rules.txt
 extensions/flac/src/main/jni/Android.mk
 extensions/flac/src/main/jni/flac_parser.cc
 library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheDataSourceTest.java
+library/src/main/java/com/google/android/exoplayer2/C.java
+library/src/main/java/com/google/android/exoplayer2/DefaultLoadControl.java
+library/src/main/java/com/google/android/exoplayer2/drm/OfflineLicenseHelper.java
 library/src/main/java/com/google/android/exoplayer2/extractor/mp4/FragmentedMp4Extractor.java
 library/src/main/java/com/google/android/exoplayer2/source/chunk/ChunkExtractorWrapper.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/DashUtil.java
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSink.java
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSinkFactory.java
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSource.java
@@ -571,13 +593,26 @@ playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/g
 playbacktests/src/main/java/com/google/android/exoplayer2/playbacktests/util/ExoHostedTest.java
 Current month/year :  03/2017
 
+build.gradle
+demo/src/main/java/com/google/android/exoplayer2/demo/DemoUtil.java
+demo/src/main/java/com/google/android/exoplayer2/demo/TrackSelectionHelper.java
+library/core/build.gradle
 library/core/src/androidTest/java/com/google/android/exoplayer2/extractor/DefaultExtractorInputTest.java
 library/core/src/androidTest/java/com/google/android/exoplayer2/upstream/DataSourceInputStreamTest.java
 library/core/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheDataSourceTest.java
 library/core/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheDataSourceTest2.java
+library/core/src/main/java/com/google/android/exoplayer2/C.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/DummyDataSource.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSource.java
+library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheUtil.java
+library/core/src/main/java/com/google/android/exoplayer2/util/PriorityTaskManager.java
+library/dash/build.gradle
 library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/DashUtilTest.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/offline/DashDownloaderTest.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashUtil.java
+library/dash/src/main/java/com/google/android/exoplayer2/source/dash/DashWrappingSegmentIndex.java
+library/hls/build.gradle
+library/smoothstreaming/build.gradle
 library/src/androidTest/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CacheDataSourceTest.java
 library/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndexTest.java
@@ -593,7 +628,9 @@ library/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheDataSour
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContent.java
 library/src/main/java/com/google/android/exoplayer2/upstream/cache/SimpleCache.java
 library/src/main/java/com/google/android/exoplayer2/util/Util.java
+library/ui/build.gradle
 playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashHostedTest.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashStreamingTest.java
 playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTest.java
 playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTestData.java
 playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTestRunner.java
@@ -609,6 +646,7 @@ library/smoothstreaming/src/main/java/com/google/android/exoplayer2/source/smoot
 Current month/year :  05/2017
 
 demo/src/main/java/com/google/android/exoplayer2/demo/SampleChooserActivity.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSessionManager.java
 library/core/src/main/java/com/google/android/exoplayer2/extractor/mp4/AtomParsers.java
 library/core/src/main/java/com/google/android/exoplayer2/extractor/mp4/FragmentedMp4Extractor.java
 library/core/src/main/java/com/google/android/exoplayer2/extractor/ts/SeiReader.java
@@ -625,6 +663,9 @@ library/core/src/androidTest/java/com/google/android/exoplayer2/upstream/cache/C
 library/core/src/main/java/com/google/android/exoplayer2/source/chunk/ContainerMediaChunk.java
 library/core/src/main/java/com/google/android/exoplayer2/source/chunk/InitializationChunk.java
 library/core/src/main/java/com/google/android/exoplayer2/source/chunk/SingleSampleMediaChunk.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/Downloader.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/DownloaderException.java
+library/core/src/main/java/com/google/android/exoplayer2/source/offline/DownloaderFactory.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/DataSpec.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheUtil.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/SimpleCache.java
@@ -634,7 +675,24 @@ testutils/src/main/java/com/google/android/exoplayer2/testutil/CacheAsserts.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/FakeDataSource.java
 Current month/year :  07/2017
 
+extensions/cronet/src/androidTest/java/com/google/android/exoplayer2/ext/cronet/ByteArrayUploadDataProviderTest.java
+extensions/cronet/src/androidTest/java/com/google/android/exoplayer2/ext/cronet/CronetDataSourceTest.java
+extensions/ima/src/main/java/com/google/android/exoplayer2/ext/ima/ImaAdsLoader.java
+extensions/mediasession/src/main/java/com/google/android/exoplayer2/ext/mediasession/RepeatModeActionProvider.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/drm/OfflineLicenseHelperTest.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/extractor/ogg/DefaultOggSeekerUtilMethodsTest.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/util/AtomicFileTest.java
+library/core/src/androidTest/java/com/google/android/exoplayer2/util/ParsableByteArrayTest.java
+library/core/src/main/java/com/google/android/exoplayer2/drm/OfflineLicenseHelper.java
+library/core/src/main/java/com/google/android/exoplayer2/source/DynamicConcatenatingMediaSource.java
+library/core/src/main/java/com/google/android/exoplayer2/text/cea/Cea708Decoder.java
 library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CacheUtil.java
+library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java
+library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/SimpleCache.java
+library/core/src/main/java/com/google/android/exoplayer2/util/AtomicFile.java
+library/dash/src/androidTest/java/com/google/android/exoplayer2/source/dash/DashUtilTest.java
+library/hls/build.gradle
+library/hls/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsMasterPlaylist.java
 testutils/src/main/java/com/google/android/exoplayer2/testutil/CacheAsserts.java
 Current month/year :  08/2017
 

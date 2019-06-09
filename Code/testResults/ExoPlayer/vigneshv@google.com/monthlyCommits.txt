@@ -26,6 +26,13 @@ extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoder.ja
 extensions/vp9/src/main/jni/vpx_jni.cc
 Current month/year :  08/2016
 
+demo/src/main/assets/sample_media.exolist.json
+library/src/androidTest/assets/mkv/subsample_encrypted_altref.webm
+library/src/androidTest/assets/mkv/subsample_encrypted_altref.webm.0.dump
+library/src/androidTest/assets/mkv/subsample_encrypted_noaltref.webm
+library/src/androidTest/assets/mkv/subsample_encrypted_noaltref.webm.0.dump
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractorTest.java
+library/src/main/java/com/google/android/exoplayer2/extractor/mkv/MatroskaExtractor.java
 Current month/year :  09/2016
 
 Current month/year :  10/2016
