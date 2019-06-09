@@ -1,0 +1,4 @@
+library/src/main/java/com/google/android/exoplayer/MediaCodecTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/MediaFormat.java
+library/src/main/java/com/google/android/exoplayer/audio/AudioTrack.java
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java

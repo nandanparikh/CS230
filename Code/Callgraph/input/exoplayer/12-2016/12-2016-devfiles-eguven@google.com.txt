@@ -1,0 +1,11 @@
+library/src/main/java/com/google/android/exoplayer/upstream/cache/CachedContentIndex.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.java
+library/src/main/java/com/google/android/exoplayer2/source/dash/manifest/SegmentBase.java
+playbacktests/build.gradle
+playbacktests/src/androidTest/AndroidManifest.xml
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/Mp3PlaybackTest.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/Mp4PlaybackTest.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/gts/DashTest.java
+playbacktests/src/androidTest/java/com/google/android/exoplayer2/playbacktests/hls/HlsTest.java
+playbacktests/src/main/AndroidManifest.xml
+playbacktests/src/main/java/com/google/android/exoplayer2/playbacktests/util/DebugSimpleExoPlayer.java

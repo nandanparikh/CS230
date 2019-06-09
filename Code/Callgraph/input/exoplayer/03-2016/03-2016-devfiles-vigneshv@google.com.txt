@@ -1,0 +1,2 @@
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/OpusDecoder.java
+extensions/opus/src/main/jni/opus_jni.cc

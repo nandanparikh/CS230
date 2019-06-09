@@ -1,0 +1,4 @@
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/StreamingDrmSessionManager.java
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java

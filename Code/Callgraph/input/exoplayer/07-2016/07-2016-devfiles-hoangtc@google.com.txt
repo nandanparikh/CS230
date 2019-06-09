@@ -1,0 +1,17 @@
+demo/src/main/java/com/google/android/exoplayer/demo/SmoothStreamingTestMediaDrmCallback.java
+demo/src/main/java/com/google/android/exoplayer/demo/WidevineTestMediaDrmCallback.java
+demo/src/main/java/com/google/android/exoplayer/demo/player/DashRendererBuilder.java
+demo/src/main/java/com/google/android/exoplayer/demo/player/SmoothStreamingRendererBuilder.java
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/LibopusAudioTrackRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/OpusDecoder.java
+extensions/opus/src/main/jni/opus_jni.cc
+extensions/opus/src/main/proguard.cfg
+library/src/main/java/com/google/android/exoplayer/MediaCodecTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/MediaCodecVideoTrackRenderer.java
+library/src/main/java/com/google/android/exoplayer/drm/DrmSessionManager.java
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer/drm/ExoMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaCrypto.java
+library/src/main/java/com/google/android/exoplayer/drm/FrameworkMediaDrm.java
+library/src/main/java/com/google/android/exoplayer/drm/MediaDrmCallback.java
+library/src/main/java/com/google/android/exoplayer/drm/StreamingDrmSessionManager.java

@@ -1,6 +1,4 @@
-
-#!/bin/sh
-
+#!/bin/bash
 #Integration script for all scraping information
 
 # Usage : sh findAllInformationForRepo.sh gitRepoFolder yearFrom yearTo resultsDirectory

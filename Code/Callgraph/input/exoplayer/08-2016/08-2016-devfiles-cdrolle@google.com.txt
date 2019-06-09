@@ -1,0 +1,2 @@
+library/src/main/java/com/google/android/exoplayer2/upstream/DefaultDataSource.java
+library/src/main/java/com/google/android/exoplayer2/upstream/DefaultDataSourceFactory.java

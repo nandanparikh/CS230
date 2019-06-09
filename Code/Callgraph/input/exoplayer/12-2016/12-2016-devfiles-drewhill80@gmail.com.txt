@@ -1,0 +1,6 @@
+library/src/main/java/com/google/android/exoplayer2/audio/AudioTrack.java
+library/src/main/java/com/google/android/exoplayer2/text/Cue.java
+library/src/main/java/com/google/android/exoplayer2/text/ImageCue.java
+library/src/main/java/com/google/android/exoplayer2/ui/SimpleExoPlayerView.java
+library/src/main/java/com/google/android/exoplayer2/ui/SubtitlePainter.java
+library/src/main/res/layout/exo_simple_player_view.xml

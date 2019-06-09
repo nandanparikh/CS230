@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # @author : Nandan
 #First argument : Folder of git repo

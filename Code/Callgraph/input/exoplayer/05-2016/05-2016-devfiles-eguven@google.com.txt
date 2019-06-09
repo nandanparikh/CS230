@@ -1,0 +1,7 @@
+extensions/flac/src/main/java/com/google/android/exoplayer/ext/flac/FlacExtractor.java
+extensions/opus/src/main/java/com/google/android/exoplayer/ext/opus/OpusDecoder.java
+library/src/androidTest/java/com/google/android/exoplayer/extractor/webm/WebmExtractorTest.java
+library/src/main/java/com/google/android/exoplayer/extractor/ogg/FlacReader.java
+library/src/main/java/com/google/android/exoplayer/extractor/ogg/OggSeeker.java
+library/src/main/java/com/google/android/exoplayer/extractor/ogg/VorbisReader.java
+library/src/main/java/com/google/android/exoplayer/extractor/webm/WebmExtractor.java

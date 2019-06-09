@@ -1,0 +1,5 @@
+extensions/vp9/src/main/java/com/google/android/exoplayer/ext/vp9/LibvpxVideoTrackRenderer.java
+extensions/vp9/src/main/java/com/google/android/exoplayer/ext/vp9/VpxDecoder.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/LibvpxVideoRenderer.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoder.java
+extensions/vp9/src/main/jni/vpx_jni.cc

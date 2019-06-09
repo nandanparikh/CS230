@@ -1,0 +1,15 @@
+extensions/ffmpeg/src/main/java/com/google/android/exoplayer2/ext/ffmpeg/FfmpegAudioRenderer.java
+extensions/flac/src/main/java/com/google/android/exoplayer2/ext/flac/LibflacAudioRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/LibopusAudioRenderer.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusDecoder.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusDecoderException.java
+extensions/opus/src/main/java/com/google/android/exoplayer2/ext/opus/OpusLibrary.java
+extensions/opus/src/main/jni/opus_jni.cc
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/LibvpxVideoRenderer.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoder.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxDecoderException.java
+extensions/vp9/src/main/java/com/google/android/exoplayer2/ext/vp9/VpxLibrary.java
+extensions/vp9/src/main/jni/vpx_jni.cc
+library/src/main/java/com/google/android/exoplayer2/audio/AudioDecoderException.java
+library/src/main/java/com/google/android/exoplayer2/audio/SimpleDecoderAudioRenderer.java
+library/src/main/java/com/google/android/exoplayer2/drm/DecryptionException.java

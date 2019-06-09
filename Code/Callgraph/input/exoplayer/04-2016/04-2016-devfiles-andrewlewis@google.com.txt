@@ -1,0 +1,5 @@
+.gitignore
+demo/src/main/java/com/google/android/exoplayer/demo/player/HlsRendererBuilder.java
+extensions/flac/README.md
+library/src/main/java/com/google/android/exoplayer/extractor/mp3/Mp3Extractor.java
+library/src/main/java/com/google/android/exoplayer/hls/HlsChunkSource.java

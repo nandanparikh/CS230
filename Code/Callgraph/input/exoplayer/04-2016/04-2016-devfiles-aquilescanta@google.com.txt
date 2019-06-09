@@ -1,0 +1,16 @@
+library/src/androidTest/assets/ttml/chain_multiple_styles.xml
+library/src/androidTest/assets/ttml/font_size.xml
+library/src/androidTest/assets/ttml/inherit_multiple_styles.xml
+library/src/androidTest/assets/ttml/multiple_regions.xml
+library/src/androidTest/assets/ttml/namespace_confusion.xml
+library/src/androidTest/assets/ttml/namespace_not_declared.xml
+library/src/androidTest/java/com/google/android/exoplayer/text/ttml/TtmlParserTest.java
+library/src/androidTest/java/com/google/android/exoplayer/text/ttml/TtmlRenderUtilTest.java
+library/src/androidTest/java/com/google/android/exoplayer/text/ttml/TtmlStyleTest.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlNode.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlParser.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlRegion.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlRenderUtil.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlStyle.java
+library/src/main/java/com/google/android/exoplayer/text/ttml/TtmlSubtitle.java
+library/src/main/java/com/google/android/exoplayer/util/ParserUtil.java

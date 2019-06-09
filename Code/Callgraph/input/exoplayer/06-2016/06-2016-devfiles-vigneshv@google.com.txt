@@ -1,0 +1,3 @@
+demo/src/main/java/com/google/android/exoplayer/demo/Samples.java
+library/src/main/java/com/google/android/exoplayer/extractor/mp4/Atom.java
+library/src/main/java/com/google/android/exoplayer/extractor/mp4/AtomParsers.java

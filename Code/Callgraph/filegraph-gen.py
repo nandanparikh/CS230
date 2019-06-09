@@ -8,10 +8,14 @@ import pandas as pd
 
 classes = set()
 project_name = sys.argv[1]
-op = 'input/' + sys.argv[2] + '/' + sys.argv[2] + '-' + sys.argv[1] + '.txt'
+op = 'input/' + sys.argv[1] + '/' + sys.argv[2] + '/' + sys.argv[2] + '-' + sys.argv[1] + '.txt'
 
-output_dir = 'output/' + sys.argv[2]
-condensed_dir = 'output/condensed'
+output_dir = 'output/' + sys.argv[1] + '/' + sys.argv[2]
+condensed_dir = 'output/' + sys.argv[1] + '/' + sys.argv[2] + '/condensed'
+author_dir = 'output/' + sys.argv[1]  + '/' + sys.argv[3]
+
+if not os.path.exists(author_dir):
+    os.makedirs(author_dir)
 
 if not os.path.exists(condensed_dir):
     os.makedirs(condensed_dir)
@@ -22,10 +26,6 @@ if not os.path.exists(output_dir):
 int_dir = output_dir + '/' + 'intermediate-files' + '-' + sys.argv[3]
 if not os.path.exists(int_dir):
     os.mkdir(int_dir)
-
-csv_dir = 'output' + '/' + 'csv-files' + sys.argv[3]
-if not os.path.exists(csv_dir):
-    os.mkdir(csv_dir)
 
 filegraph = open(int_dir + '/' + sys.argv[2] + '-filegraph.txt', "w")
 condensed_filegraph = open(int_dir + '/' + sys.argv[2] + '-condensedfilegraph.txt', "w")
@@ -84,7 +84,7 @@ for line in content:
 
 dev_files =  set()
 
-with open('input/' + sys.argv[2] + '/' + sys.argv[2] + '-devfiles-' + sys.argv[3] + '.txt', encoding='utf-8') as f:
+with open('input/' + sys.argv[1] + '/' + sys.argv[2] + '/' + sys.argv[2] + '-devfiles-' + sys.argv[3] + '.txt', encoding='utf-8') as f:
     content = f.read().splitlines()
 
     for filename in content:
@@ -153,5 +153,5 @@ for src, deps in edges.items():
 			edges_df = edges_df.append(pd.Series([already_added_nodes.index(src), already_added_nodes.index(dep), 'directed', 1], index=edges_df.columns), ignore_index=True)
 			already_added.add((src, dep))
 
-edges_df.to_csv(csv_dir + '/' + sys.argv[2] + 'edges.csv', index=False)
-nodes_df.to_csv(csv_dir + '/' + sys.argv[2] + 'nodes.csv', index_label='id')
+edges_df.to_csv(author_dir + '/' + sys.argv[2] + 'edges.csv', index=False)
+nodes_df.to_csv(author_dir + '/' + sys.argv[2] + 'nodes.csv', index_label='id')

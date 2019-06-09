@@ -1,0 +1,16 @@
+library/src/androidTest/java/com/google/android/exoplayer2/extractor/ts/SectionReaderTest.java
+library/src/main/java/com/google/android/exoplayer/extractor/ts/TsExtractor.java
+library/src/main/java/com/google/android/exoplayer/hls/HlsChunkSource.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/DefaultTsPayloadReaderFactory.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/SectionPayloadReader.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/SectionReader.java
+library/src/main/java/com/google/android/exoplayer2/extractor/ts/TsExtractor.java
+library/src/main/java/com/google/android/exoplayer2/source/chunk/ChunkedTrackBlacklistUtil.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsChunkSource.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaChunk.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaPeriod.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsMediaSource.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/HlsSampleStreamWrapper.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsMediaPlaylist.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylistParser.java
+library/src/main/java/com/google/android/exoplayer2/source/hls/playlist/HlsPlaylistTracker.java
