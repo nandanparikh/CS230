@@ -16,6 +16,7 @@ import networkx as nx
 #import matplotlib.pyplot as plt
 import bellmanford as bf
 
+
 G = nx.Graph()
 
 dirlist = []
@@ -25,6 +26,8 @@ authorHopInfo = {}
 shellStatsFolder = sys.argv[1];
 callGraphFolder = sys.argv[2];
 
+print(shellStatsFolder)
+print(callGraphFolder)
 
 def createCallGraph(monthFile):
 
@@ -54,18 +57,23 @@ def createCallGraph(monthFile):
 		#create Graph
 		#print(G.number_of_nodes())
 		#print(G.number_of_edges())
-		print(G.edges.data())
+		#print(G.edges.data())
 		file.close()
 	except:
 		print("Exception in creating graph")
 
+'''
+Return total hops to reach to the file
+Returns -1 if no way to reach the path
+Returns -2 if the graph does not have the file
+'''
 def findHops(filesList, currentFile):
 
 	maxHop = 50000;
 
 	if not G.has_node(currentFile):
 		#print("Node not found in graph : ", currentFile)
-		return maxHop;
+		return -2;
 
 	for file in filesList:
 
@@ -80,7 +88,7 @@ def findHops(filesList, currentFile):
                          target=file,
                          weight=None,
                          method='dijkstra')
-				print("PATH LENGTH ", path_length)
+				# print("PATH LENGTH ", path_length)
 				#print("PATH NODES ", path_nodes)
 				#print("NEG_CYCLE ", negative_cycle)
 				if maxHop > path_length:
@@ -89,7 +97,7 @@ def findHops(filesList, currentFile):
 				print("Exception in finding distance ",e)
 
 	if maxHop == 50000:
-		return 0
+		return -1
 	return maxHop;
 
 for root, dirs, files in os.walk(shellStatsFolder):
@@ -99,13 +107,16 @@ callGraphFilesTemp = []
 for root, dirs, files in os.walk(callGraphFolder):
     callGraphFilesTemp += files
 
+print(callGraphFilesTemp)
 
 for file in callGraphFilesTemp:
 	if '.DS' not in file:
 		callGraphFiles.append(file)
 
-callGraphFiles.sort();
+print(callGraphFiles)
 
+callGraphFiles.sort();
+monthLen = len(callGraphFiles)
 
 #For each author find his files worked
 for author in dirlist:
@@ -116,7 +127,7 @@ for author in dirlist:
 	month = 0
 	hopsPerFile = {}
 	file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
-
+	print(author)
 	bufferTimeForAuthor = 0
 
 	#MAKE GRAPH HERE
@@ -143,32 +154,64 @@ for author in dirlist:
 
 		else: 
 			#MAKE GRAPH AGAIN
+			if month == monthLen:
+				break;
+
+			print(callGraphFiles[month])
 			createCallGraph(callGraphFiles[month])
 			allFilesByAuthor += monthlyFiles
-			print(allFilesByAuthor)
+			#print(allFilesByAuthor)
 
 			monthlyFiles = []
 			bufferTimeForAuthor += 1
 			month += 1
-
-		if month > 100:
-			break;
-
-	print("BUFF",bufferTimeForAuthor)
 
 	authorHopInfo[author] = hopsPerFile;
 	file.close()
 
 #sys.stdout = open(shellStatsFolder+'/HopInformation', 'w')
 #sys.stdout = sys.__stdout__
-
+hopStatistics = {}
 for author, hopInfo in authorHopInfo.items():
 	print("\n****************")
 	print("Developer is ", author)
-	for file, hopCount in hopInfo.items():
-		print("\nFile : ", month," hops : ", hops);
-		#FIND AVERAGE?!
 
+	fileNotFoundInGraph = 0
+	fileIndependent = 0
+	filesWithHops = 0
+	totalHops = 0
+
+	for file, hopCount in hopInfo.items():
+		if(hopCount == -1):
+			fileIndependent += 1
+
+		if(hopCount == -2):
+			fileNotFoundInGraph += 1
+
+		if(hopCount >= 0):
+			totalHops += hopCount + 1
+			filesWithHops += 1
+
+	print("\nTotal Hops : ", totalHops," fileIndependent : ", fileIndependent, 
+		"fileNotFoundInGraph ", fileNotFoundInGraph);
+	print("Total files with hops ", filesWithHops)
+
+	someData = {}
+
+	if filesWithHops == 0:
+		someData['Total Average Hops'] = 0
+	else:
+		someData['Total Average Hops'] = totalHops/filesWithHops
+
+	someData['Independent files in Graph'] = fileIndependent
+	someData['Files not found in Graph'] = fileNotFoundInGraph
+
+	hopStatistics[author] = someData;
+	print(someData)
+
+df = pd.DataFrame(hopStatistics)
+df = df.transpose()
+df.to_csv(shellStatsFolder+'/hopStatistics.csv')
 #def plotGraph():
 #	nx.draw(G, with_labels=True, font_weight='bold')
 #	plt.subplot(122)

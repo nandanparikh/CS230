@@ -31,3 +31,10 @@ sh totalCommits.sh /Users/walled/Documents/CS230/dummy/okhttp 2016 2017 $PWD/okh
 
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/okhttp $PWD
 python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommitInfo/ExoPlayer $PWD
+
+
+#CALL GRAPH FILES REQ FOR HOPS
+python formatCallGraphData.py /Users/walled/Documents/CS230/CS230/Code/testResults/CallGraph-okhttp $PWD/resultsForHops
+
+
+find . -type f -print0 | xargs -0 dos2unix
