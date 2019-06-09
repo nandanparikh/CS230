@@ -38,6 +38,7 @@ python ownershipStats.py /Users/walled/Documents/CS230/CS230/Code/ScrapingCommit
 python formatCallGraphData.py /Users/walled/Documents/CS230/CS230/Code/testResults/CallGraph-okhttp $PWD/resultsForHops
 python formatCallGraphData.py /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraph /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraphFormattedTxt
 
+#DOS2UNIX conversion
 find . -type f -print0 | xargs -0 dos2unix
 
 

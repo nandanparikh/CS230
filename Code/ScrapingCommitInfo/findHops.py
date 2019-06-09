@@ -16,7 +16,6 @@ import networkx as nx
 #import matplotlib.pyplot as plt
 import bellmanford as bf
 
-
 G = nx.Graph()
 
 dirlist = []
@@ -26,8 +25,15 @@ authorHopInfo = {}
 shellStatsFolder = sys.argv[1];
 callGraphFolder = sys.argv[2];
 
-print(shellStatsFolder)
-print(callGraphFolder)
+def createOutputTable():
+	df = pd.DataFrame(hopStatistics)
+	df = df.transpose()
+	df.to_csv(shellStatsFolder+'/hopStatistics.csv')
+
+# def plotGraph():
+# 	nx.draw(G, with_labels=True, font_weight='bold')
+# 	#plt.subplot(122)
+# 	plt.show()
 
 def createCallGraph(monthFile):
 
@@ -61,6 +67,7 @@ def createCallGraph(monthFile):
 		file.close()
 	except:
 		print("Exception in creating graph")
+	plotGraph()
 
 '''
 Return total hops to reach to the file
@@ -107,13 +114,10 @@ callGraphFilesTemp = []
 for root, dirs, files in os.walk(callGraphFolder):
     callGraphFilesTemp += files
 
-print(callGraphFilesTemp)
 
 for file in callGraphFilesTemp:
 	if '.DS' not in file:
 		callGraphFiles.append(file)
-
-print(callGraphFiles)
 
 callGraphFiles.sort();
 monthLen = len(callGraphFiles)
@@ -127,7 +131,6 @@ for author in dirlist:
 	month = 0
 	hopsPerFile = {}
 	file = open(shellStatsFolder+"/"+author+"/monthlyCommits.txt", "r");
-	print(author)
 	bufferTimeForAuthor = 0
 
 	#MAKE GRAPH HERE
@@ -207,11 +210,5 @@ for author, hopInfo in authorHopInfo.items():
 	someData['Files not found in Graph'] = fileNotFoundInGraph
 
 	hopStatistics[author] = someData;
-	print(someData)
 
-df = pd.DataFrame(hopStatistics)
-df = df.transpose()
-df.to_csv(shellStatsFolder+'/hopStatistics.csv')
-#def plotGraph():
-#	nx.draw(G, with_labels=True, font_weight='bold')
-#	plt.subplot(122)
+createOutputTable(hopStatistics)
