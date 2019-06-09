@@ -1,6 +1,6 @@
-id,label,dev
-0,DefaultDataSourceFactory,1
-1,DataSource,0
-2,Context,0
-3,DefaultDataSource,1
-4,Uri,0
+id;label;dev
+133;DefaultDataSource;2
+59;DataSource;0
+85;Uri;0
+134;Context;0
+135;DefaultDataSourceFactory;2
