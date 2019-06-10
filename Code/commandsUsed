@@ -2,7 +2,7 @@
 
 okhttp 2012 2013
 sh findAllInformationForRepo gitRepoFolder yearFrom yearTo resultsDirectory
-Example : sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 $PWD/okhttpCheck
+Example : sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/okhttp 2012 2013 /Users/walled/Documents/CS230/CS230/Code/testResults/okhttp
 
 ExoPlayer 2016 2017
 sh findAllInformationForRepo.sh /Users/walled/Documents/CS230/dummy/ExoPlayer 2016 2017 /Users/walled/Documents/CS230/CS230/Code/testResults/ExoPlayer
@@ -51,7 +51,11 @@ find . -type f -print0 | xargs -0 dos2unix
 
 
 #HOP INFO:
-python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/ExoPlayer /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraphFormattedTxt
 
+
+
+python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/okhttp /Users/walled/Documents/CS230/CS230/Code/testResults/okhttp-callGraphFromattedTxt
+
+python findHops.py /Users/walled/Documents/CS230/CS230/Code/testResults/ExoPlayer /Users/walled/Documents/CS230/CS230/Code/testResults/exoplayer-callGraphFormattedTxt
 
 python developerStats.py /Users/walled/Documents/CS230/CS230/Code/testResults/guava /Users/walled/Documents/CS230/CS230/Code/testResults/guava

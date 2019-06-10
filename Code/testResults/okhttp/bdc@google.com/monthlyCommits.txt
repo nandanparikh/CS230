@@ -30,8 +30,13 @@ Current month/year :  03/2013
 
 Current month/year :  04/2013
 
+Android.mk
+src/main/java/com/squareup/okhttp/Connection.java
+src/main/java/com/squareup/okhttp/internal/http/RawHeaders.java
 Current month/year :  05/2013
 
+src/main/java/com/google/mockwebserver/MockWebServer.java
+src/main/java/com/squareup/okhttp/Connection.java
 Current month/year :  06/2013
 
 Current month/year :  07/2013

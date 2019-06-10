@@ -16,6 +16,7 @@ import networkx as nx
 #import matplotlib.pyplot as plt
 import bellmanford as bf
 
+print("Executing findHops.py")
 G = nx.Graph()
 
 dirlist = []
@@ -25,7 +26,7 @@ authorHopInfo = {}
 shellStatsFolder = sys.argv[1];
 callGraphFolder = sys.argv[2];
 
-def createOutputTable():
+def createOutputTable(hopStatistics):
 	df = pd.DataFrame(hopStatistics)
 	df = df.transpose()
 	df.to_csv(shellStatsFolder+'/hopStatistics.csv')
@@ -67,7 +68,7 @@ def createCallGraph(monthFile):
 		file.close()
 	except:
 		print("Exception in creating graph")
-	plotGraph()
+	#plotGraph()
 
 '''
 Return total hops to reach to the file
@@ -201,14 +202,18 @@ for author, hopInfo in authorHopInfo.items():
 
 	someData = {}
 
-	if filesWithHops == 0:
-		someData['Total Average Hops'] = 0
-	else:
-		someData['Total Average Hops'] = totalHops/filesWithHops
-
 	someData['Independent files in Graph'] = fileIndependent
 	someData['Files not found in Graph'] = fileNotFoundInGraph
+
+	if filesWithHops == 0:
+		someData['Total Average Hops ( For connections )'] = 0
+	else:
+		someData['Total Average Hops ( For connections )'] = format(totalHops/filesWithHops, '.2f')
+
+	someData['Total files with connections'] = filesWithHops
+
 
 	hopStatistics[author] = someData;
 
 createOutputTable(hopStatistics)
+print("Finished executing findHops.py")

@@ -14,7 +14,9 @@ mkdir $FOLDER;
 
 ((TO++))
 
-echo $TO
+echo "Executing totalCommits for authors"
+
+#echo $TO
 #Go to git code folder
 echo "Path provided to execute fetch git logs is : " $1;
 cd $1;
@@ -43,8 +45,11 @@ do
 	echo $author ":" $counter >> $FOLDER/commitCountPerAuthor.txt;
 done
 
-echo $totalCount
+#echo $totalCount
 
 some=`git log --all --after=$FROM"-01-01" --until=$TO"-01-01" \
 	| grep -E "^commit" | sed -e 's/commit //g' | wc -l`;
-echo $some
+#echo $some
+
+echo "Exiting totalCommits.sh"
+

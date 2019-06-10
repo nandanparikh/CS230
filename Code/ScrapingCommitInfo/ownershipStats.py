@@ -15,11 +15,13 @@ import pandas as pd
 shellStatsFolder = sys.argv[1];
 resultsFolder = sys.argv[2];
 
+print("***************************")
+print("Executing ownershipStats.py")
+
+
 dirlist = []
 for root, dirs, files in os.walk(shellStatsFolder):
     dirlist += dirs
-
-#print(dirlist)
 
 authorDict = {}
 
@@ -45,9 +47,11 @@ for author in dirlist:
 	file.close()
 
 df = pd.DataFrame(authorDict) 
-df.to_csv(resultsFolder+'/df.csv')
+df.to_csv(resultsFolder+'/ownershipStats1.csv')
     
 #print("Transpose the dictionary")
     
 df1 = df.transpose()
-df1.to_csv(resultsFolder+'/df1.csv')
+df1.to_csv(resultsFolder+'/ownershipStats2.csv')
+
+print("Exiting ownershipStats.py")

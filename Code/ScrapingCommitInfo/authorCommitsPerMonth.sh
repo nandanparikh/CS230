@@ -14,6 +14,8 @@ FROM=$2
 TO=$3
 FOLDER=$4
 
+
+echo "Executing authorCommitsPerMonth.sh"
 mkdir $FOLDER;
 
 ((TO++))
@@ -75,6 +77,9 @@ done
 
 sort -u $FOLDER/allCommitsForTimePeriod.txt > $FOLDER/allCommitsForGraph.txt
 rm -f $FOLDER/tempForAuthor.txt $FOLDER/allCommitsForTimePeriod.txt
+
+echo "Finished executing authorCommitsPerMonth.sh"
+
 #References
 #Sample codes : authors and date
 #git log --all --after=$2"-01-31" --until="2019-05-19" --author="N"

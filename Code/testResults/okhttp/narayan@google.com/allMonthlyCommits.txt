@@ -448,31 +448,3 @@ website/static/logo-square.png
 website/static/prettify.js
 Current month/year :  12/2013
 
-Current month/year :  01/2014
-
-Current month/year :  02/2014
-
-Current month/year :  03/2014
-
-Current month/year :  04/2014
-
-Current month/year :  05/2014
-
-Current month/year :  06/2014
-
-Current month/year :  07/2014
-
-Current month/year :  08/2014
-
-okhttp/src/main/java/com/squareup/okhttp/Connection.java
-okhttp/src/main/java/com/squareup/okhttp/Connection.java
-Current month/year :  09/2014
-
-Current month/year :  10/2014
-
-okhttp/src/main/java/com/squareup/okhttp/internal/http/RouteSelector.java
-Current month/year :  11/2014
-
-okhttp/src/main/java/com/squareup/okhttp/internal/http/RouteSelector.java
-Current month/year :  12/2014
-

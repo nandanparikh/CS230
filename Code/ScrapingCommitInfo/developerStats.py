@@ -12,6 +12,9 @@ import os
 import sys
 import pandas as pd
 
+print("***************************")
+print("Executing DeveloperStats.py")
+
 #Dict for author -> List of files worked upon in entire duration
 developerWork = {}
 
@@ -113,7 +116,6 @@ for author,files in developerWork.items():
 	print("Developer is ", author)
 	print(len(files))
 
-#sys.stdout = sys.__stdout__
 for author, monthlyData in developerMonthlyNewWork.items():
 	print("\n****************")
 	print("Developer is ", author)
@@ -128,3 +130,7 @@ df.to_csv(resultsFolder+'/monthlyStatsNew.csv')
 
 df = pd.DataFrame(authorDict)
 df.to_csv(resultsFolder+'/monthlyStatsTotal.csv')
+
+sys.stdout = sys.__stdout__
+
+print("Exiting developerStats.py")
