@@ -50,7 +50,7 @@ import org.openide.util.Lookup;
 public class trial {
     
     public void multipleCalls(){
-        String authorName = "vigneshv@google.com";
+        String authorName = "aquilescanta@google.com    ";
         script("01", authorName);
         script("02", authorName);
         script("03", authorName);
@@ -128,6 +128,10 @@ public class trial {
         Partition partition = ((PartitionFunction) func).getPartition();
         System.out.println(partition.size() + " partitions found");
         Palette palette = PaletteManager.getInstance().generatePalette(partition.size());
+        
+        Color[] colors1 = new Color[1];
+         colors1[0] = Color.LIGHT_GRAY;
+        
         Color[] colors2 = new Color[2];
          colors2[0] = Color.LIGHT_GRAY;
          colors2[1] = Color.MAGENTA; 
@@ -138,6 +142,8 @@ public class trial {
          colors3[2] = Color.MAGENTA;
          if(partition.size() == 2 )
              partition.setColors(colors2);
+         else if(partition.size() == 1 )
+             partition.setColors(colors1);
          else
             partition.setColors(colors3);
         appearanceController.transform(func);
