@@ -50,7 +50,7 @@ import org.openide.util.Lookup;
 public class trial {
     
     public void multipleCalls(){
-        String authorName = "andrewlewis@google.com";
+        String authorName = "vigneshv@google.com";
         script("01", authorName);
         script("02", authorName);
         script("03", authorName);
@@ -85,8 +85,6 @@ public class trial {
         previewModel.getProperties().putValue(PreviewProperty.DIRECTED, Boolean.TRUE);
         previewModel.getProperties().putValue(PreviewProperty.NODE_LABEL_PROPORTIONAL_SIZE, Boolean.FALSE);
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
-        
-        Layout l = new Layout();
 
     //Import file
     Container container,container2;
@@ -120,7 +118,11 @@ public class trial {
     System.out.println("Nodes: " + graph.getNodeCount());
     System.out.println("Edges: " + graph.getEdgeCount());  
     
-    //Partition with 'source' column, which is in the data
+        if( graph.getNodeCount() !=0)
+        {
+            if(graph.getEdgeCount()!=0)
+            {
+                      //Partition with 'source' column, which is in the data
         Column column = graphModel.getNodeTable().getColumn("dev");
         Function func = appearanceModel.getNodeFunction(graph, column, PartitionElementColorTransformer.class);
         Partition partition = ((PartitionFunction) func).getPartition();
@@ -172,5 +174,8 @@ public class trial {
         } catch (IOException ex) {
             return;
         }
+            }
+        }    
+  
     }
 }
